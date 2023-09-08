@@ -1,0 +1,31 @@
+ASP.NET Web Forms vs ASP.NET MVC vs ASP.NET Core
+
+--ASP.NET Web Forms 2002
+	> Perfomance issues due to server events and view-state
+	> Not cloud friendly
+	> Not open source from the beginning
+	> Event-driven model
+	> No longer the option for development
+
+--ASP.NET MVC 2009
+	> Performance issues due to some dependencies with ASP.NET (.NET Framework)
+	> Lack of support for cross-platform
+	> Not 100% cloud friendly
+	> Open source
+	> MVC Pattern
+	> Direct Inject can be added optionally
+
+--ASP.NET Core 2016
+	> Faster performance
+	> Cloud friendly
+	> Cross-platform support
+	> Open source
+	> MVC Pattern
+	> Built in support for Direct Injection
+	> Highly unit testable
+	> Modular
+	> Modules:
+		*ASP.NET Core MVC
+		*ASP.NET Core Web API
+		*ASP.NET Core Razor Pages
+		*ASP.NET Core Blazor

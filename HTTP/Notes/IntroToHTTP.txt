@@ -1,0 +1,53 @@
+Introduction to HTTP
+
+--Hypertext Transfer Protocol
+	> Application protocol that defines a set of rules to send request from browser to server and send response from server to browser.
+	> Initially developed by Tim Berners Lee and later standardized by IETF( Internet Engineering Task Force) and W3C (World Wide Web Consortium)
+	> Client sends request to server in the form of a HTTP request.
+	> The server responses to the client in the form of a HTTP response.
+
+--HTTP Response
+	> Format:
+		****
+			HTTP/1.1 StatusCode StatusDescription => Start Line
+			Key: Value => Response Headers
+			Key: Value => Response Headers
+					   => Empty Line
+			Response Body => Response Body
+			...
+			...
+			...
+		****
+
+--HTTP Response Status Codes
+	> 1xx - Informational => 101 Switching Protocals
+	> 2xx - Success => 200 OK
+	> 3xx - Redirection => 302 Found
+						   304 Not Modified
+	> 4xx - Client Error => 400 Bad Request
+						    401 Unauthorized
+							404 Not Found
+	> 5xx Server Error => 500 Internal Server Error
+
+--HTTP Response Headers
+	> Some common response headers include:
+		*Date => Date and time of the response.
+		*Server => Name of the server.
+		*Content-Type => MIME type of the response body.
+		*Content-Length => Length(bytes) of response body.
+		*Cache-Control => Indicates number of seconds that the response can be cached at the browser.
+		*Set-Cookie => Contains cookies to send to browser.
+		*Access-Control-Allow-Origin => Used to enable CORS (Cross-Origin-Resource-Sharing).
+		*Location => Contains url to redirect.
+
+--HTTP Request
+	> Format:
+		****
+			Method URL HTTP/1.1 => Start Line
+			Key: Value => Request Headers
+			Key: Value => Request Headers
+					   => Empty Line
+			Request Body => Request Body
+			...
+			...
+			...

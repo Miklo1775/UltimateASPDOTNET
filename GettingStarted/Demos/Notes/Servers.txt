@@ -1,0 +1,23 @@
+Kestrel and Other Servers
+
+/* Notes */
+
+--Kestrel and Other Servers
+	> Is the default, cross-platform server for development and real-world applications.
+	> In the real world, Kestrel will usually be used as an application server and a development server.
+	> For production environments, Reverse Proxy Servers would will usually be used such as IIS, Nginx, and Apache.
+	> To simulate adanced features offered by RPS, you can use a dummy RPS like IIS express.
+
+--Architecture
+	> For Kestrel servers:
+		*Response is received from internet or local network and is forwarded to the application code.
+		*Kestrel will receive the request and fills the request in the form of an object which is known as HTTP context and that HTTP context is what is sent to the application code.
+		*Application code does what it needs to with the request and sends the response back to Kestrel.
+		*The same response is sent back to the client.
+		*Kestrel doesn't support some advanced features that are required for requests such as load-balancing or URL rewriting. 
+
+		> For reverse proxy servers:
+			*The response is received by the RPS.
+			*These RPS offer some of the advanced features such as load balancing, caching, url rewriting, decompressing the requests, authentication, and decryption of SSL certificates. 
+			*These RPS then forward that request to the Kestrel server.
+			*Kestrel then fills the HTTP context and sends that to the application code.
