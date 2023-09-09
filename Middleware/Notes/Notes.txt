@@ -1,0 +1,17 @@
+Middleware
+
+--What is Middleware?
+	> Component that is assembled into the application pipeline to handle requests and responses.
+	> Middlewares are chained one-after-other and execute in the sane sequence how they're added.
+	> Each middleware peforms a single operation implementing single responsibility principle.
+	> Middleware can be a request delegate (anonymous method or lambda expression) [or] a class.
+	> Middlewares also don't have to forward the request to the subsequent middleware if it doesn't have to. This middleware is called terminal middleware or short-circuiting middleware.
+
+--Middleware Chain
+	> Middlewares can be chained one after another.
+	> This is optional.
+	> next() forwards the Http context to the next middleware. 
+	> App.Use() allows forwarding to subsequent middleware.
+	> App.Run() does not allow forwarding to the subsequent middleware.
+	> After the request hits the terminating middleware, the response is sent back up throught the chain. 
+	> If code is present after any next() calls, that code will run as the response is being sent back up.
