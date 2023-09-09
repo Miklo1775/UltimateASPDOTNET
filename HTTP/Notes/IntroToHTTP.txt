@@ -51,3 +51,15 @@ Introduction to HTTP
 			...
 			...
 			...
+		****
+
+--HTTP Request Headers
+	> Common request headers include:
+		*Accept => Represents MIME type of response content to be accepted by the client.
+		*Accept-Language => Represents natural language of response content to be accepted by the client.
+		*Content-Type => MIME type of request body.
+		*Content-Length => Length(bytes) of request body.
+		*Date => Date and time of request.
+		*Host => Server domain name.
+		*User-Agent => Browser(client) details.
+		*Cookie => Contains cookies to send to server.
