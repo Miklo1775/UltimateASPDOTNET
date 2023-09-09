@@ -26,6 +26,12 @@ app.Use(async (HttpContext context, RequestDelegate next) =>
 
 });
 
+app.Use(async(HttpContext context, RequestDelegate next) =>
+{
+    context.Response.Headers["MyKey"] = "My value";
+    await next(context);
+});
+
 app.Run(async (HttpContext context) =>
 {
     await context.Response.WriteAsync("Hello, I am the next middleware :D");

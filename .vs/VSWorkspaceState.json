@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Middleware"
+    "\\Middleware",
+    "\\Middleware\\Demos",
+    "\\Middleware\\Demos\\MiddlewareDemo",
+    "\\Middleware\\Demos\\MiddlewareDemo\\MiddlewareDemo",
+    "\\Middleware\\Notes"
   ],
-  "SelectedNode": "\\Middleware\\Notes",
+  "SelectedNode": "\\Middleware\\Demos\\MiddlewareDemo\\MiddlewareDemo.sln",
   "PreviewInSolutionExplorer": false
 }
