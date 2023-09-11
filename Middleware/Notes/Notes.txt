@@ -15,3 +15,54 @@ Middleware
 	> App.Run() does not allow forwarding to the subsequent middleware.
 	> After the request hits the terminating middleware, the response is sent back up throught the chain. 
 	> If code is present after any next() calls, that code will run as the response is being sent back up.
+
+--Middleware Class
+	> Middleware class is used to separate the middleware logic from a lambda expression to a separate/reuseable class.
+	> Format:
+		****
+			class MiddlewareClassName : IMiddleware
+			{
+				public async Task InvokeAsync(HttpContext context, RequestDelegate next)
+				{
+					//before logic
+
+					await next(context);
+
+					//after logic
+				}
+			}
+		****
+
+--Middleware Extensions
+	> Middleware extension method is used to invoke the middleware with a single method call.
+	> Format:
+		****
+			static class ClassName 
+			{
+				public static IApplicationBuilder ExtensionMethodName(this IApplicationBuilder app)
+				{
+					return app.UseMiddleware<ClassName>();
+				}
+			}
+		****
+
+--Conventional Middleware
+	> Format:
+		****
+			class MiddlewareClassName
+			{
+				private readonly RequestDelegate _next;
+				public MiddlewareClassName(RequestDelegate next)
+				{
+					_next = next;
+				}
+
+				public async Task InvokeAsync(HttpContext context)
+				{
+					//before logic
+					
+					await _next(context);
+
+					//after logic
+				}
+			}

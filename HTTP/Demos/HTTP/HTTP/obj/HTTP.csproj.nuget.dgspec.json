@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj": {}
+    "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj": {
+    "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj",
+        "projectUniqueName": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj",
         "projectName": "HTTP",
-        "projectPath": "c:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj",
+        "projectPath": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\HTTP.csproj",
         "packagesPath": "C:\\Users\\Vic\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\obj\\",
+        "outputPath": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\HTTP\\Demos\\HTTP\\HTTP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,4 +1,10 @@
+using MiddlewareDemo.CustomMW;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//  ADDING CUSTOM MIDDLEWARE AS A SERVICE
+builder.Services.AddTransient<MyCustomMiddleware>();
+
 var app = builder.Build();
 
 //THIS MIDDLEWARE CAN RECEIVE AN OBJECT OF HttpContext
@@ -26,11 +32,18 @@ app.Use(async (HttpContext context, RequestDelegate next) =>
 
 });
 
-app.Use(async(HttpContext context, RequestDelegate next) =>
-{
-    context.Response.Headers["MyKey"] = "My value";
-    await next(context);
-});
+//INSTANTIATING (custom) MIDDLEWARE
+//app.UseMiddleware<MyCustomMiddleware>();
+
+//WE CAN USE EXTENSION METHODS TO SIMPLIFY THE ABOVE STATEMENT
+//app.UseMyCustomMiddleware();
+app.UseHelloCustomMiddleware();
+
+//app.Use(async(HttpContext context, RequestDelegate next) =>
+//{
+//    context.Response.Headers["MyKey"] = "My value";
+//    await next(context);
+//});
 
 app.Run(async (HttpContext context) =>
 {
