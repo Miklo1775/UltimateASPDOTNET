@@ -1,0 +1,37 @@
+Routing in ASP.NET Core
+
+--Introduction to Routing
+	> Routing is a process of matching incoming HTTP requests by checking HTTP method and url; and then invoking corresponding endpoints.
+
+--Routing - UseRouting and UseEndpoints
+	> UseRouting();
+		*Enables routing and selects an appropriate end point based on the url path and HTTP method.
+		*Format:
+			****
+				app.UseRouting();
+			****
+	> UseEndpoints();
+		*Executes the appropriate endpoint based on the endpoint selected by the above UseRouting() method.
+		*Format:
+			****
+				app.UseEndpoints(endpoints => 
+				{
+					endpoints.Map(...);
+					endpoints.MapGet(...);
+					endpoints.MapPost(...);
+				});
+			****
+
+--GetEndPoint();
+	> Returns an instance of Microsoft.AspNetCore.Http.Endpoint type, which represents an endpoint.
+	> That instance contains two important properties: DisplayName, RequestDelegate.
+	> Placeing GetEndPoint before UseRouting() returns null.
+	> Placing GetEndPoint after UseRouting returns Endpoint object.
+
+--Route Parameters
+	> The varying part of the URL.
+	> Format:
+		****
+			/files/{filename}.{extension}
+			/employee/profile/{employeename}
+		****
