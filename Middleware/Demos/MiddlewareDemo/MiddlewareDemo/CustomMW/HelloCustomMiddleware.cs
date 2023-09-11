@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 namespace MiddlewareDemo.CustomMW
 {
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
+    // THE PREFERRED WAY OF WRITING CUSTOM MIDDLEWARE
     public class HelloCustomMiddleware
     {
         private readonly RequestDelegate _next;

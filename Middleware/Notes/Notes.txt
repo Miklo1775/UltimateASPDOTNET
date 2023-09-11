@@ -66,3 +66,33 @@ Middleware
 					//after logic
 				}
 			}
+
+--The Right Order of Middleware
+	*ExceptionHandler
+	*HSTS => HTTP strict transport security - Forces HTTPS
+	*HttpsRedirection
+	*Static Files
+	*Routing
+	*CORS
+	*Authentication
+	*Authorization
+	*Custom Middlewares
+	*Endpoint
+
+	****
+		app.UseExceptionHandler("/Error");
+		app.UseHsts();
+		app.UseHttpsRedirection();
+		app.UseStaticFiles();
+		app.UseRouting();
+		app.UseCors();
+		app.UseAuthentication();
+		app.UseAuthorization();
+		app.UseSesstion();
+		app.MapControllers();
+		//add custom middleware here
+		app.Run();
+
+--Middleware - UseWhen
+	> Middleware 1 => UseWhen (is condition true?) => Use middleware branch
+							  (is condition not true?) => continue in Main middleware chain
