@@ -61,9 +61,9 @@ app.UseEndpoints(endpoints => {
     //USING ROUTING PARAMETERS
     endpoints.Map("files/{filename}.{extension}", async context =>
     {
-        //GETTING THE ROUTE PARAMETERS
         await context.Response.WriteAsync("In files");
 
+        //GETTING THE ROUTE PARAMETERS
         string? fileName =context.Request.RouteValues["filename"]?.ToString();
         string? extension = context.Request.RouteValues["extension"]?.ToString();
         
@@ -81,7 +81,8 @@ app.UseEndpoints(endpoints => {
         
     });
 
-    endpoints.Map("employee/profile/{employeename}", async context =>
+    //WE CAN SUPPLY DEFAULT VALUES FOR PARAMETERS INSIDE THE CURLY BRACES
+    endpoints.Map("employee/profile/{employeename=Chichi}", async context =>
     {
         string? name = context.Request.RouteValues["employeename"]?.ToString();
 
@@ -89,6 +90,22 @@ app.UseEndpoints(endpoints => {
         {
             await context.Response.WriteAsync($"{name}");
         }
+    });
+
+    //USING OPTIONAL PARAMETERS
+    endpoints.Map("products/details/{id?}", async (HttpContext context) =>
+    {
+        string? id = context.Request.RouteValues["id"]?.ToString();
+
+        if(id != null)
+        {
+            await context.Response.WriteAsync($"{id}");
+        }
+        else
+        {
+            await context.Response.WriteAsync("Id is not supplied");
+        }
+
 
     });
 
@@ -96,7 +113,7 @@ app.UseEndpoints(endpoints => {
 
 
 
-
+//THIS WILL ACT AS THE CATCH ALL ENDPOINT
 app.Run( async (HttpContext context) => {
     await context.Response.WriteAsync("Catch all middleware\n");
 

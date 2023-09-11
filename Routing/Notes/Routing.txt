@@ -35,3 +35,18 @@ Routing in ASP.NET Core
 			/files/{filename}.{extension}
 			/employee/profile/{employeename}
 		****
+
+--Default Route Parameters
+	> A route parameter with default value matches with any value. It also matches with empty values. In this case, the default value will be considered into the parameter.
+	> Format: 
+		****
+			"{parameter=default_value}"
+		****
+
+--Optional Route Parameters
+	> "?" indicates an optional parameter. That means it matches with a value or empty value also.
+	> Format: 
+		****
+			"{parameter?}"
+		****
+
