@@ -50,3 +50,13 @@ Routing in ASP.NET Core
 			"{parameter?}"
 		****
 
+--Constraints
+	> Allows only a specified type to be accepted.
+	> If a type doesn't match a specified constraint, the request will move down to the next middleware in the pipeline.
+	> Some constraints that are valid include:
+		*int => Matches with any integer
+		*bool => Matches with true or false. Case-insensitve.
+		*datetime => Matches a valid DateTime value with formats "yyyy-MM-dd hh:mm:ss tt" and "MM/dd/yyyy hh:mm:ss tt".
+		*decimal => Matches with a valid decimal value.
+		*long => Matches a valid long value.
+		*guid => Matches with a valid Guid value (Globally Unique Identifier - A hexadecimal that is universally unique).

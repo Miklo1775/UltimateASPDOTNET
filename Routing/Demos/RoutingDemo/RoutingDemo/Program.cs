@@ -92,10 +92,12 @@ app.UseEndpoints(endpoints => {
         }
     });
 
-    //USING OPTIONAL PARAMETERS
-    endpoints.Map("products/details/{id?}", async (HttpContext context) =>
+    //USING OPTIONAL PARAMETERS - {id?}
+    //USING CONSTRAINT - {id:int?}
+    //CONSTRAINTS ALLOW ONLY A CERTAIN TYPE TO BE ACCEPTED
+    endpoints.Map("products/details/{id:int?}", async (HttpContext context) =>
     {
-        string? id = context.Request.RouteValues["id"]?.ToString();
+        int? id = Convert.ToInt32(context.Request.RouteValues["id"]);
 
         if(id != null)
         {
@@ -105,8 +107,23 @@ app.UseEndpoints(endpoints => {
         {
             await context.Response.WriteAsync("Id is not supplied");
         }
+    });
+
+    //DATETIME CONSTRAINT EXAMPLE
+    endpoints.Map("daily-digest-report/{reportdate:datetime}", async (HttpContext context) => 
+    {
+        DateTime reportDate = Convert.ToDateTime(context.Request.RouteValues["reportdate"]);
+
+        await context.Response.WriteAsync($"Report Date: {reportDate.ToShortDateString()}");
+    });
 
 
+    //GUIDE CONSTRAINT EXAMPLE
+    endpoints.Map("cities/{cityid:guid}", async(HttpContext context) =>
+    {
+     Guid? cityId = Guid.Parse(Convert.ToString(context.Request.RouteValues["cityid"])!);
+
+        await context.Response.WriteAsync($"City information - {cityId}");
     });
 
 });
