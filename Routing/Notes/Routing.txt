@@ -60,3 +60,6 @@ Routing in ASP.NET Core
 		*decimal => Matches with a valid decimal value.
 		*long => Matches a valid long value.
 		*guid => Matches with a valid Guid value (Globally Unique Identifier - A hexadecimal that is universally unique).
+		*minlength(value) => Matches with a string that has at least specified number of characters.
+		*maxlength(value) => Matches with a string that has less that or equal to the specified numbers of characters.
+		*length(min,max) => Matches with a string that has number of characters between given minimum and maximum length (both numbers inclusive).
