@@ -63,3 +63,9 @@ Routing in ASP.NET Core
 		*minlength(value) => Matches with a string that has at least specified number of characters.
 		*maxlength(value) => Matches with a string that has less that or equal to the specified numbers of characters.
 		*length(min,max) => Matches with a string that has number of characters between given minimum and maximum length (both numbers inclusive).
+		*length(value) => Matches with a string that has exactly specified number of characters.
+		*min(value) => Matches with an integer value greater than or equal to the specified value.
+		*max(value) => Matches with an integer value less than or equal to the specified value.
+		*range(min,max) => Matches with an integer value between the specified minimum and maximum values(both numbers including).
+		*alpha => Matches with a string that contains only alphanumeric characters.
+		*regex(expression) => Matches with a string that matches with the specified regular expression.

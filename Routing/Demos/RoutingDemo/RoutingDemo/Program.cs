@@ -82,7 +82,7 @@ app.UseEndpoints(endpoints => {
     });
 
     //WE CAN SUPPLY DEFAULT VALUES FOR PARAMETERS INSIDE THE CURLY BRACES
-    endpoints.Map("employee/profile/{employeename=Chichi}", async context =>
+    endpoints.Map("employee/profile/{employeename:length(3,8):alpha=Chichi}", async context =>
     {
         string? name = context.Request.RouteValues["employeename"]?.ToString();
 
@@ -95,7 +95,7 @@ app.UseEndpoints(endpoints => {
     //USING OPTIONAL PARAMETERS - {id?}
     //USING CONSTRAINT - {id:int?}
     //CONSTRAINTS ALLOW ONLY A CERTAIN TYPE TO BE ACCEPTED
-    endpoints.Map("products/details/{id:int?}", async (HttpContext context) =>
+    endpoints.Map("products/details/{id:int:range(1,100)?}", async (HttpContext context) =>
     {
         int? id = Convert.ToInt32(context.Request.RouteValues["id"]);
 
@@ -126,13 +126,19 @@ app.UseEndpoints(endpoints => {
         await context.Response.WriteAsync($"City information - {cityId}");
     });
 
+    endpoints.Map("sales-report/{year:int:min(1900)}/{month:regex(^(apr|jul|oct)$)}", async context =>
+    {
+        int year = Convert.ToInt32(context.Request.RouteValues["year"]);
+        string? month = Convert.ToString(context.Request.RouteValues["month"]);
+        await context.Response.WriteAsync($"sales report - {year} = {month}");
+    });
+
+
 });
-
-
 
 //THIS WILL ACT AS THE CATCH ALL ENDPOINT
 app.Run( async (HttpContext context) => {
-    await context.Response.WriteAsync("Catch all middleware\n");
+    await context.Response.WriteAsync("No routes matched\n");
 
     await context.Response.WriteAsync($"Request received at: {context.Request.Path}");
 });
