@@ -1,7 +1,15 @@
 using Microsoft.AspNetCore.Http;
+using RoutingDemo.CustomContsraints;
 using System.Net.Mime;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//ADDING OUR CUSTOM CONSTRAINT SERVICE TO THE BUILDER
+builder.Services.AddRouting( options =>
+{
+    options.ConstraintMap.Add("months", typeof(MonthsCustomConstraint));
+});
+
 var app = builder.Build();
 
 //ENDPOINT OBJECT RETURNS NULL BEFORE USEROUTING() METHOD
@@ -126,7 +134,9 @@ app.UseEndpoints(endpoints => {
         await context.Response.WriteAsync($"City information - {cityId}");
     });
 
-    endpoints.Map("sales-report/{year:int:min(1900)}/{month:regex(^(apr|jul|oct)$)}", async context =>
+    //ADDING OUR CUSTOM CONSTRAINT TO OUR END POINT {month:months}
+    //WE ADD THE NAME OF OUR CUSTOM CONSTRAINT AFTER THE ROUTE PARAMETERS
+    endpoints.Map("sales-report/{year:int:min(1900)}/{month:months}", async context =>
     {
         int year = Convert.ToInt32(context.Request.RouteValues["year"]);
         string? month = Convert.ToString(context.Request.RouteValues["month"]);

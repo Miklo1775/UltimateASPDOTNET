@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Middleware\\Demos",
-    "\\Middleware\\Demos\\MiddlewareDemo",
-    "\\Middleware\\Demos\\MiddlewareDemo\\MiddlewareDemo",
-    "\\Middleware\\Notes",
-    "\\Routing",
-    "\\Routing\\Notes"
+    ""
   ],
-  "SelectedNode": "\\Routing\\Notes\\Routing.txt",
+  "SelectedNode": "\\RoutingDemo.sln",
   "PreviewInSolutionExplorer": false
 }

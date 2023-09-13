@@ -69,3 +69,20 @@ Routing in ASP.NET Core
 		*range(min,max) => Matches with an integer value between the specified minimum and maximum values(both numbers including).
 		*alpha => Matches with a string that contains only alphanumeric characters.
 		*regex(expression) => Matches with a string that matches with the specified regular expression.
+
+--Custom Route Constraints Class
+	> Format:
+		*****
+			public class ClassName : IRouteConstraint
+			{
+				public bool Match(HttpContext? HttpContext, IRouter? route, string routeKey, RouteValueDictionary values, RouteDirection routeDirection)
+				{
+					//return true or false
+				}
+			}
+			////////Adding the custom constraint to routing.
+			builder.Services.AddRouting(options => 
+			{
+				options.ContstaintMap.Add("name", typeof(ClassName));
+			});
+		*****
