@@ -1,0 +1,34 @@
+Controllers
+
+--What is a Controller?
+	> A Controller is a class that is used to group-up a set of actions (or action methods).
+	> Each action method can act as an endpoint.
+	> Action methods perform certain operations when a request is received and returns the result(response).
+
+--Creating Controllers
+	> Should be either or both:
+		*The class name should be suffixed with "Controller".
+		*The [Controller] attribute is applied to the same class or its base class.
+	> Format: 
+		*****
+			[Controller]
+			class ClassNameController
+			{
+				//action methods here
+			}
+		*****
+	> Optional:
+		*Is a public class.
+		*Inherited from Microsoft.AspNetCore.Mvc.Controller.
+
+--Enable 'routing' in Controllers
+	> AddController() => Adds all controllers as services in the IServiceCollection so that they can be accessed when a specific endpoint needs it.
+		*Example: builder.Services.AddControllers();
+	> MapControllers() => Adds all action methods as endpoints so that no need of using UseEndPoints() method for adding action methods as endpoints.
+		*Example: app.MapControllers();
+
+--Responsibilities of Controllers
+	> Reading requests => Extracting data values from request such as query string parameters, request body, request cookies, request headers, etc.
+	> Validation => Validate incoming request details (query string parameters, request body, request cookies, request headers etc).
+	> Invoking Models => Calling business logic methods. Generally business operations are available as 'services'.
+	> Preparing Response => Choosing what kind of response has to be sent to the client & also preparing the response (action result).
