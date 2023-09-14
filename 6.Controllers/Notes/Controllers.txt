@@ -32,3 +32,7 @@ Controllers
 	> Validation => Validate incoming request details (query string parameters, request body, request cookies, request headers etc).
 	> Invoking Models => Calling business logic methods. Generally business operations are available as 'services'.
 	> Preparing Response => Choosing what kind of response has to be sent to the client & also preparing the response (action result).
+
+--ContentResult
+	> Can represent any type of response, based on the specified MIMI type.
+	> MIMI type represents type of the content such as text/plain, text/html, application/json, application/xml, application/pdf, etc

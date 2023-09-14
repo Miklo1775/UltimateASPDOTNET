@@ -3,7 +3,7 @@
 namespace ControllersDemo.Controllers
 {
     //ASP.NET WILL AUTOMATICALLY CONVERT THE CLASS INTO A CONTROLLER IF WE SUFFIX OUR CLASSNAME WITH CONTROLLER: e.g HomeController, UserController, AdminController
-    public class HomeController
+    public class HomeController : Controller
     {
         //WHEN WRITING OUR ROUTES LIKE THIS [Route(")], THIS IS CALLED ATTRIBUTE ROUTING.
         //WHATEVER IS RETURNED FROM THE ACTION METHOD WILL BE RETURNED TO THE BROWSER AS THE RESPONSE.
@@ -20,9 +20,17 @@ namespace ControllersDemo.Controllers
 
         [Route("home")]
         [Route("/")]
-        public string Index()
+        public ContentResult Index()
         {
-            return "Index";
+            //ContentResult RETURNS THE CONTENT AS WELL AS THE CONTENT-TYPE
+            //Content WILL BE ADDED TO THE RESPONSE BODY.
+            //ContentType WILL BE ADDED TO THE RESPONSE HEADER.
+            //return new ContentResult() 
+            //{Content = "<h1>INDEX</h1>", ContentType = "text/html" };
+
+            //THERE IS A SIMPLER WAY TO RETURN THE ContentResult.
+            //TO USE THE SIMPLER WAY, WE NEED TO IMPLEMENT THE Controller BASE CLASS.
+            return Content("<h1>Hello World</h1>", "text/html");
         }
 
         [Route("about")]
