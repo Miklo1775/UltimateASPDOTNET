@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\Routing\\Demos\\StaticFilesWebRoot\\StaticFilesWebRoot\\wwwroot\\Screenshot (14).png",
+      "PackagePath": "staticwebassets\\Screenshot (14).png"
+    },
+    {
+      "Id": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\Routing\\Demos\\StaticFilesWebRoot\\StaticFilesWebRoot\\wwwroot\\Victor-Flores-Resume.docx",
+      "PackagePath": "staticwebassets\\Victor-Flores-Resume.docx"
+    },
+    {
+      "Id": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\Routing\\Demos\\StaticFilesWebRoot\\StaticFilesWebRoot\\wwwroot\\VictorsPortfolio.pdf",
+      "PackagePath": "staticwebassets\\VictorsPortfolio.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.StaticFilesWebRoot.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.StaticFilesWebRoot.props",
+      "PackagePath": "build\\StaticFilesWebRoot.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.StaticFilesWebRoot.props",
+      "PackagePath": "buildMultiTargeting\\StaticFilesWebRoot.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.StaticFilesWebRoot.props",
+      "PackagePath": "buildTransitive\\StaticFilesWebRoot.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

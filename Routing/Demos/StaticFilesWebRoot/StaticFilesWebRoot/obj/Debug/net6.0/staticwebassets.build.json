@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "4Nu1MSpoCbQfrTixmXpyWUaUOkJnt0k0YN0c5pTRiiA=",
+  "Source": "StaticFilesWebRoot",
+  "BasePath": "_content/StaticFilesWebRoot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StaticFilesWebRoot\\wwwroot",
+      "Source": "StaticFilesWebRoot",
+      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\Routing\\Demos\\StaticFilesWebRoot\\StaticFilesWebRoot\\wwwroot\\",
+      "BasePath": "_content/StaticFilesWebRoot",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
