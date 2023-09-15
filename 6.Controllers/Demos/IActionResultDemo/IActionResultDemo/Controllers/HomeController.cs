@@ -18,6 +18,8 @@ namespace IActionResultDemo.Controllers
                 //INSTEAD OF SETTING THE STATUS CODE MANUALLY, WE CAN USE THE BadRequestResult().
                 //FROM HERE ON FORWARD, THESE RETURNED RESULTS WILL HAVE A SIMPLER METHOD AS WELL UNLESS STATED OTHERWISE.
                 //return new BadRequestResult();
+                //IF USING STATUSCODE() THE RESPONSE BODY WILL AUTOMATICALLY BE EMPTY
+                //return StatusCode(401);
                 return BadRequest("Bookid is not supplied.");
 
             }
