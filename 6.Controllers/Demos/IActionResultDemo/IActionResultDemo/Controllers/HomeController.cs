@@ -15,7 +15,9 @@ namespace IActionResultDemo.Controllers
             if (!Request.Query.ContainsKey("bookid")){
                 //return Content("Book id is not supplied");
 
-                return new BadRequestResult();
+                //INSTEAD OF SETTING THE STATUS CODE MANUALLY, WE CAN USE THE BadRequestResult().
+                //FROM HERE ON FORWARD, THESE RETURNED RESULTS WILL HAVE A SIMPLER METHOD AS WELL UNLESS STATED OTHERWISE.
+                //return new BadRequestResult();
 
             }
 
