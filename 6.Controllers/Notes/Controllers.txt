@@ -66,14 +66,14 @@ Controllers
 			>> Example:
 				**return new StatusCodeResult(status_code);
 
-		*UnauthorizedResult => 401
+		*UnauthorizedResult => 401 Unauthorized
 			>> Example:
 				**return new UnauthorizedResult();
 
-		*BadRequestResult => 400
+		*BadRequestResult => 400 Bad Request
 			>> Example:
 				**return new BadRequestResult();
 
-		*NotFoundResult => 404
+		*NotFoundResult => 404 Not Found
 			>> Example:
 				**return new NotFoundResult();
