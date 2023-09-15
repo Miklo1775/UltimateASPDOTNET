@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "DHc3TSeuxozuXDHyceG4qgq6z759lCxm3cPZPrIbMyU=",
+  "Hash": "8v2RythIrsRPCKBNr5XheZr+d+SZWgZMK/v7c6mAv8M=",
   "Source": "ControllersDemo",
   "BasePath": "_content/ControllersDemo",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ControllersDemo\\wwwroot",
+      "Source": "ControllersDemo",
+      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\",
+      "BasePath": "_content/ControllersDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\Victor-Flores-Resume.docx",
+      "SourceId": "ControllersDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\",
+      "BasePath": "_content/ControllersDemo",
+      "RelativePath": "Victor-Flores-Resume.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Victor-Flores-Resume.docx"
+    },
+    {
+      "Identity": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\Victor-Flores-Resume.pdf",
+      "SourceId": "ControllersDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\",
+      "BasePath": "_content/ControllersDemo",
+      "RelativePath": "Victor-Flores-Resume.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Victor-Flores-Resume.pdf"
+    }
+  ]
 }

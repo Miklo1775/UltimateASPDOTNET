@@ -36,3 +36,25 @@ Controllers
 --ContentResult
 	> Can represent any type of response, based on the specified MIMI type.
 	> MIMI type represents type of the content such as text/plain, text/html, application/json, application/xml, application/pdf, etc
+
+--JsonResult
+	> JsonResult can represent an object in JavaScript Object Notation (JSON) format.
+
+--FileResults 
+	> File results sends the content of a file as a response.
+	> We have three types of File Results:
+		*VirtualFileResult
+			>> Example:
+					**return new VirtualFileResult("file relative path", "content-type");
+
+		*PhysicalFileResult
+			>> Example:
+					**return new PhysicalFileResult("file absolute path", "content-type");
+
+		*FileContentResult
+			>> Example:
+					**return new FileContentResult(byte_array, "content-type");
+				 
+--IActionResult
+	> It is the parent interface for all action result classes such as ContentResult, JsonResult, RedirectResult, StatusCodeResult, ViewResult, etc.
+	> By mentioning the return type as IActionResult, you can return either of the subtypes of IActionResult.

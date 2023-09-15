@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\Victor-Flores-Resume.docx",
+      "PackagePath": "staticwebassets\\Victor-Flores-Resume.docx"
+    },
+    {
+      "Id": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\ControllersDemo\\ControllersDemo\\wwwroot\\Victor-Flores-Resume.pdf",
+      "PackagePath": "staticwebassets\\Victor-Flores-Resume.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ControllersDemo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ControllersDemo.props",
+      "PackagePath": "build\\ControllersDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ControllersDemo.props",
+      "PackagePath": "buildMultiTargeting\\ControllersDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ControllersDemo.props",
+      "PackagePath": "buildTransitive\\ControllersDemo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

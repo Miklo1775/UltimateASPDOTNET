@@ -12,9 +12,11 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
+//app.UseStaticFiles();
+
 //THIS IS THE LONGER WAY OF ADDING ROUTING FOR OUR ACTION METHODS
 
-//app.UseRouting();
+app.UseRouting();
 
 //app.UseEndpoints(endpoints =>
 //{

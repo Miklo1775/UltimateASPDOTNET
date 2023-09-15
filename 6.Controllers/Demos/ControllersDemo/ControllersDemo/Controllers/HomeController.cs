@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ControllersDemo.Models;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace ControllersDemo.Controllers
 {
@@ -30,13 +32,27 @@ namespace ControllersDemo.Controllers
 
             //THERE IS A SIMPLER WAY TO RETURN THE ContentResult.
             //TO USE THE SIMPLER WAY, WE NEED TO IMPLEMENT THE Controller BASE CLASS.
-            return Content("<h1>Hello World</h1>", "text/html");
+            return Content("Hello World", "text/plain");
         }
 
-        [Route("about")]
+        //[Route("about")]
         public ContentResult About()
         {
+           
             return Content("<h1>About</h1>", "text/html");
+        }
+
+        //[Route("person")]
+        public JsonResult Person()
+        {
+            Person person = new Person() { Id = Guid.NewGuid(), FirstName = "Chichi", LastName = "Flores", Age = 3 };
+
+            //THE JsonResult WILL RETURN THE person OBJECT AS A JSON OBJECT IN THE RESPONSE BODY.
+            //return new JsonResult(person);
+
+            //JUST LIKE WITH ContentResult, THE CONTROLLER BASE CLASS GIVES A SIMPLER WAY TO RETURN A JSON OBJECT
+            return Json(person);
+
         }
 
 
@@ -46,5 +62,55 @@ namespace ControllersDemo.Controllers
         {
             return "Contact";
         }
+
+        //VirtualFileResult RETURNS FILES FROM wwwroot FOLDER
+        [Route("download-file")]
+        public VirtualFileResult FileDownload()
+        {
+            //return new VirtualFileResult("Victor-Flores-Resume.docx", GetMIMEType("Victor-Flores-Resume.docx"));
+
+            //WE CAN ALSO USE THE SIMPLER WAY:
+            return File("Victor-Flores-Resume.docx", GetMIMEType("Victor-Flores-Resume.docx"));
+
+        }
+
+        //PhysicalFileResult RETURNS FILE OUTSIDE OF wwwroot FOLDER USING ABSOLUTE PATH
+        [Route("download-physical-file")]
+        public PhysicalFileResult PhysicalFileDownload()
+        {
+            //return new PhysicalFileResult(@"C:\Users\Vic\Downloads\pic1.jpg", GetMIMEType("pic1.jpg"));
+
+            //Simpler:
+            return PhysicalFile(@"C:\Users\Vic\Downloads\pic1.jpg", GetMIMEType("Victor-Flores-Resume.docx"));
+        }
+        //FileContentResult RETURNS A BINARY FILE AS A RESPONSE.
+        //IT TAKES THE FILE CONTENTS, SUCH AS A byte[].
+        [Route("/download-bytearray-file")]
+        public FileContentResult FileContentDownload()
+        {
+            //System.IO.File.ReadAllBytes WILL READ ALL THE BYTES FROM A FILE AND RETURN A byte[].
+            byte[] byteArray = System.IO.File.ReadAllBytes(@"C:\Users\Vic\Downloads\pic1.jpg");
+            //return new FileContentResult(byteArray, GetMIMEType("pic1.jpg"));
+
+            //Simpler:
+            return File(byteArray, GetMIMEType("pic1.jpg"));
+        }
+
+        private static string GetMIMEType(string fileName)
+        {
+            const string DefaultContentType = "application/octet-stream";
+
+            string contentType;
+
+            var provider = new FileExtensionContentTypeProvider();
+
+            if (!provider.TryGetContentType(fileName, out contentType))
+            {
+                contentType = DefaultContentType;
+            }
+
+            return contentType;
+        }
+
     }
 }

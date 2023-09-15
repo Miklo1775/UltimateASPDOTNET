@@ -23,3 +23,4 @@ C:\Users\Vic\Desktop\TechCourses\UltimateASP.NET\6.Controllers\Demos\Controllers
 C:\Users\Vic\Desktop\TechCourses\UltimateASP.NET\6.Controllers\Demos\ControllersDemo\ControllersDemo\obj\Debug\net6.0\ControllersDemo.pdb
 C:\Users\Vic\Desktop\TechCourses\UltimateASP.NET\6.Controllers\Demos\ControllersDemo\ControllersDemo\obj\Debug\net6.0\ControllersDemo.genruntimeconfig.cache
 C:\Users\Vic\Desktop\TechCourses\UltimateASP.NET\6.Controllers\Demos\ControllersDemo\ControllersDemo\obj\Debug\net6.0\ref\ControllersDemo.dll
+C:\Users\Vic\Desktop\TechCourses\UltimateASP.NET\6.Controllers\Demos\ControllersDemo\ControllersDemo\bin\Debug\net6.0\ControllersDemo.staticwebassets.runtime.json
