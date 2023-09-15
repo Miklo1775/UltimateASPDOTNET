@@ -18,13 +18,14 @@ namespace IActionResultDemo.Controllers
                 //INSTEAD OF SETTING THE STATUS CODE MANUALLY, WE CAN USE THE BadRequestResult().
                 //FROM HERE ON FORWARD, THESE RETURNED RESULTS WILL HAVE A SIMPLER METHOD AS WELL UNLESS STATED OTHERWISE.
                 //return new BadRequestResult();
+                return BadRequest("Bookid is not supplied.");
 
             }
 
             //bookid can't be null or empty
             if (String.IsNullOrEmpty(Convert.ToString(Request.Query["bookid"])))
             {
-                return Content("Book id can't be null or empty");
+                return BadRequest("Bookid cannot be null or empty");
             }
 
             //book id should be between 1 to 1000
@@ -32,7 +33,12 @@ namespace IActionResultDemo.Controllers
 
             if(bookId < 1 || bookId > 1000) 
             {
-                return Content("Book id can't be less than 1 or greater than 1000");
+                return NotFound("Book id can't be less than 1 or greater than 1000");
+            }
+
+            if (Convert.ToBoolean(Request.Query["isloggedin"]) == false)
+            {
+                return Unauthorized("User must be authenticated");
             }
 
             return File("/Victor-Flores-Resume.pdf", "application/pdf");

@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\6.Controllers",
+    "\\6.Controllers\\Demos",
+    "\\6.Controllers\\Demos\\IActionResultDemo",
+    "\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo",
+    "\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo\\Controllers",
+    "\\6.Controllers\\Notes"
   ],
-  "SelectedNode": "\\ControllersDemo.sln",
+  "SelectedNode": "\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo\\IActionResultDemo.csproj",
   "PreviewInSolutionExplorer": false
 }

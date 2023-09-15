@@ -62,18 +62,18 @@ Controllers
 --Status Code Results
 	> Status code results sends an empty response with specified status code.
 	> Some semantic Status Code results we can return are:
-		*StatusCodeResult
+		*StatusCodeResult => Any Status Code
 			>> Example:
 				**return new StatusCodeResult(status_code);
 
-		*UnauthorizedResult
+		*UnauthorizedResult => 401
 			>> Example:
 				**return new UnauthorizedResult();
 
-		*BadRequestResult
+		*BadRequestResult => 400
 			>> Example:
 				**return new BadRequestResult();
 
-		*NotFoundResult
+		*NotFoundResult => 404
 			>> Example:
 				**return new NotFoundResult();
