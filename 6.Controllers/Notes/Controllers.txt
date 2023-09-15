@@ -58,3 +58,22 @@ Controllers
 --IActionResult
 	> It is the parent interface for all action result classes such as ContentResult, JsonResult, RedirectResult, StatusCodeResult, ViewResult, etc.
 	> By mentioning the return type as IActionResult, you can return either of the subtypes of IActionResult.
+
+--Status Code Results
+	> Status code results sends an empty response with specified status code.
+	> Some semantic Status Code results we can return are:
+		*StatusCodeResult
+			>> Example:
+				**return new StatusCodeResult(status_code);
+
+		*UnauthorizedResult
+			>> Example:
+				**return new UnauthorizedResult();
+
+		*BadRequestResult
+			>> Example:
+				**return new BadRequestResult();
+
+		*NotFoundResult
+			>> Example:
+				**return new NotFoundResult();

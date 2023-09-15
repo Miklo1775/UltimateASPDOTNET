@@ -13,7 +13,10 @@ namespace IActionResultDemo.Controllers
 
             //bookid should be applied
             if (!Request.Query.ContainsKey("bookid")){
-                return Content("Book id is not supplied");
+                //return Content("Book id is not supplied");
+
+                return new BadRequestResult();
+
             }
 
             //bookid can't be null or empty
