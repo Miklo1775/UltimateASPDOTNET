@@ -34,12 +34,13 @@ namespace ControllersDemo.Controllers
         }
 
         [Route("about")]
-        public string About()
+        public ContentResult About()
         {
-            return "About";
+            return Content("<h1>About</h1>", "text/html");
         }
 
-        //WE CAN ALSO SPECIFY OUR CONSTRAINTS IN ATTRIBUTE ROUTING
+
+        //WE CAN ALSO SPECIFY OUR CONSTRAINTS IN ATTRIBUTE ROUTING.
         [Route("contact/{mobile:regex(^\\d{{10}}$)}")]
         public string Contact()
         {
