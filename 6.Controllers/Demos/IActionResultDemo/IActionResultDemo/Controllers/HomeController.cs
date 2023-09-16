@@ -46,5 +46,11 @@ namespace IActionResultDemo.Controllers
             return File("/Victor-Flores-Resume.pdf", "application/pdf");
 
         }
+
+        [Route("bookstore")]
+        public IActionResult BookStore()
+        {
+            return new RedirectToActionResult("Books", "Store", new {});
+        }
     }
 }

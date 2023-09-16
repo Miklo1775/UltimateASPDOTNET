@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "2+7/rK3a+9XfXa+KMPIZZoNMKRGJ/0+W+7zvuXvF974=",
+  "Source": "IActionResultDemo",
+  "BasePath": "_content/IActionResultDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "IActionResultDemo\\wwwroot",
+      "Source": "IActionResultDemo",
+      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/IActionResultDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo\\wwwroot\\Victor-Flores-Resume.pdf",
+      "SourceId": "IActionResultDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/IActionResultDemo",
+      "RelativePath": "Victor-Flores-Resume.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Victor-Flores-Resume.pdf"
+    }
+  ]
+}

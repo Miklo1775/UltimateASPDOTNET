@@ -77,3 +77,6 @@ Controllers
 		*NotFoundResult => 404 Not Found
 			>> Example:
 				**return new NotFoundResult();
+
+--Redirect Results
+	> Redirect result sends either HTTP 302 or 301 response to the browser in order to redirext a specific action or url.
