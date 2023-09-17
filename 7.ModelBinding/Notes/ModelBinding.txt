@@ -1,0 +1,9 @@
+Model Binding
+
+--What is Model Binding?
+	> Model Binding is a feature of ASP.NET Core that reads values from HTTP requests and passes them as arguments to the action method.
+	> Model Binging simplifies retrieving data in this priority:
+		1. Form Fields
+		2. Request Body
+		3. Route Data
+		4. Query String Parameters
