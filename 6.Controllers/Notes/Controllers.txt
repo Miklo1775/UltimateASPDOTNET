@@ -80,4 +80,11 @@ Controllers
 
 --Redirect Results
 	> Redirect result sends either HTTP 302 or 301 response to the browser in order to redirext a specific action or url.
-	> 301 means permanent redirection and 302 means temporary redirection
+	> 301 means permanent redirection and 302 means temporary redirection.
+	> 3 different redirect results:
+		*ReturnToActionResult:
+			>> return new RedirectToActionResult("action method name", "controller", new {route_values}, permanent = boolean);
+		*LocalRedirectResult:
+			>> return new LocalRedirectResult("local_url", permanent = boolean);
+		*RedirectResult:
+			>> return new RedirectResult("url", permanent = boolean);

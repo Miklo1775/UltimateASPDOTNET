@@ -50,7 +50,24 @@ namespace IActionResultDemo.Controllers
         [Route("bookstore")]
         public IActionResult BookStore()
         {
-            return new RedirectToActionResult("Books", "Store", new {});
+            int bookId = 3;
+
+            //return new RedirectToActionResult("Books", "Store", new {});
+            //SHORTER VERSION OF RedirectToActionResult - 302
+            //return RedirectToAction("Books", "Store", new { bookId = 2, loggedin = true});
+
+            //SHORTER VERSION FOR PERMANENT REDIRECTION - 301
+            //return RedirectToActionPermanent("Books", "Store", new { bookId = 2 });
+
+            //FOR LocalRedirectResult
+            //return new LocalRedirectResult($"store/books/{bookId}");
+            //SHORTER VERSION OF LocalRedirectResult
+            //return LocalRedirect($"store/books/{bookId}");
+
+            //PERMANENT LocalRedirect
+            //return new LocalRedirectResult($"store/books/{bookId}", true);
+            //SHORTER VERSION OF PERMANENT LocalRedirect
+            return LocalRedirectPermanent($"store/books/{bookId}");
         }
     }
 }
