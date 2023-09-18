@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using ModelBindingDemo.Models;
 
 namespace ModelBindingDemo.Controllers
 {
@@ -9,8 +10,9 @@ namespace ModelBindingDemo.Controllers
 
         //FOR EACH PARAMETER, WE CAN SELECT WHERE WE WANT TO PULL THE DATA FROM.
         //FOR THE ROUTE DIRECTLY BELOW, WE ARE PULLING THE AUDIOBOOKID FROM THE ROUTEVALUE AND THE ISLOGGEDIN BOOLEAN VALUE FROM THE QUERY STRING.
+        //WITH MODEL CLASSES, AN OBJECT OF THE CLASS THAT YOU SPECIFY WILL BE CREATED WITH THE VALUES FORM WHEREVER YOU PULL THE DATA.
         [Route("audiobook/{audiobookId?}/{isloggedin?}")]
-        public IActionResult Index([FromRoute]int? audiobookId, [FromQuery]bool? isloggedin)
+        public IActionResult Index([FromRoute]int? audiobookId, [FromQuery]bool? isloggedin, AudioBook book)
         {
             if (audiobookId.HasValue == false)
             {
