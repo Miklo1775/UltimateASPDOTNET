@@ -13,7 +13,7 @@ namespace ModelBindingDemo.Controllers
         //WITH MODEL CLASSES, AN OBJECT OF THE CLASS THAT YOU SPECIFY WILL BE CREATED WITH THE VALUES FORM WHEREVER YOU PULL THE DATA.
         //WE CAN ALSO APPLY FROMQUERY AND FROMROUTE TO THE BOOK OBJECT.
         [Route("audiobook/{audiobookId?}/{isloggedin?}")]
-        public IActionResult Index([FromRoute]int? audiobookId, [FromQuery]bool? isloggedin, AudioBook book)
+        public IActionResult Index([FromRoute]int? audiobookId, [FromQuery]bool? isloggedin, [FromQuery]AudioBook book)
         {
             if (audiobookId.HasValue == false)
             {
@@ -36,7 +36,7 @@ namespace ModelBindingDemo.Controllers
                 return Unauthorized("User must be authenticated");
             }
 
-            return Content($"Audiobook id: {audiobookId}", "text/plain");
+            return Content($"Audiobook id: {audiobookId}, Book: {book}", "text/plain");
         }
     }
 }
