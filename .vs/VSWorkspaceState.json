@@ -6,8 +6,12 @@
     "\\7.ModelBinding\\Demos\\ModelBindingDemo",
     "\\7.ModelBinding\\Demos\\ModelBindingDemo\\ModelBindingDemo",
     "\\7.ModelBinding\\Demos\\ModelBindingDemo\\ModelBindingDemo\\Controllers",
+    "\\7.ModelBinding\\Demos\\ModelValidationsDemo",
+    "\\7.ModelBinding\\Demos\\ModelValidationsDemo\\ModelValidationsDemo",
+    "\\7.ModelBinding\\Demos\\ModelValidationsDemo\\ModelValidationsDemo\\Controllers",
+    "\\7.ModelBinding\\Demos\\ModelValidationsDemo\\ModelValidationsDemo\\Models",
     "\\7.ModelBinding\\Notes"
   ],
-  "SelectedNode": "\\7.ModelBinding\\Demos\\ModelBindingDemo\\ModelBindingDemo\\Controllers\\AudioBookController.cs",
+  "SelectedNode": "\\7.ModelBinding\\Demos\\ModelValidationsDemo\\ModelValidationsDemo\\Models\\Person.cs",
   "PreviewInSolutionExplorer": false
 }

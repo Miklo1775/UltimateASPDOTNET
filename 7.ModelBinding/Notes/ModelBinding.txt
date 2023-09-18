@@ -67,3 +67,13 @@ Model Binding
 	> isValid => Specifies whether there is at least one validation error or not (boolean).
 	> Values => Contains each model property value with corresponding "Errors" property that contains list of validation errors of that model property.
 	> ErrorCount => Returns number of errors.
+
+--Model Validations
+	> Required => Specifies that the property value is required (can't be blank or empty)
+		*[Required(ErrorMessage = "Value")]
+
+	> StringLength => Specifies minimum and maximum length (number of characters) allowed in the string.
+		*[StringLength(int maximumLength, MinimumLength = value, ErrorMessage = "Value")]
+
+	> Range => Specifies minimum and maximum numerical value allowed.
+		*[Range(int minimum, int maximum, ErrorMessage = "Value")]
