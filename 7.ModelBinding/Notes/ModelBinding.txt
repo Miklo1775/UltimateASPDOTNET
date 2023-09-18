@@ -7,3 +7,32 @@ Model Binding
 		2. Request Body
 		3. Route Data
 		4. Query String Parameters
+
+--RouteData vs Query String
+	> When using route parameters, Model Binding will take the values from the route parameters and pass them into the Action Method.
+	> When using Query String, the values from the query string are passed into the Action method.
+	> When using both in conjunction, since RouteData has higher priority than Query String, Model Binding will pull the values from the RouteData instead of the Query String unless the values from the RouteData aren't present.
+
+--FromQuery vs FromRoute
+	> Since we know that Model Binding has priority, we can override RouteData and Query String priorities to choose what Model Binding we prefer: FromQuery & FromRoute
+	> FromQuery Example:
+		*****
+			public IActionResult ActionMethodName([FromQuery] type parameter)
+			{
+				//GETS VALUE FROM QUERY STRING ONLY
+				//code here
+			}
+		*****
+
+	> FromRoute Example:
+		*****
+			public IActionResult ActionMethodName([FromRoute] type parameter)
+			{	
+				//GETS VALUE FROM ROUTE PARAMETERS ONLY
+				//code here
+			}
+		*****
+
+--Models
+	> A Model is a class that represents structure of data (as properties) that you would like to receive from the request and/or send to the response.
+	> Also known as POCO (Plain Old CLR Objects)
