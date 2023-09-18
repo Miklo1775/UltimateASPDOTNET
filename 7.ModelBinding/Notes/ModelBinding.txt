@@ -36,3 +36,28 @@ Model Binding
 --Models
 	> A Model is a class that represents structure of data (as properties) that you would like to receive from the request and/or send to the response.
 	> Also known as POCO (Plain Old CLR Objects)
+
+--form-urlencoded and form-data
+	> form-urlencoded (default)
+		*Request Headers => Content-Type: application/x-www-form-urlencoded
+		*Request Body => param1=value1&param2=value2
+	> form-data
+		*Request Headers => Content-Type: multipart/form-data
+		*Request Body => Content-Disposition: form-data; name="param1"
+						 value1
+						 ---------------------------------------------
+						 Content-Disposition: form-data; name="param2"
+						 value2
+
+	> The biggest difference between form-urlencoded and form-data is that form-urlencoded is much more suitable for simple fields/data whereas form-data is much more suitable for more complex and lengthy data. Its worth noting that form-urlencoded can still handle lengthy fields if you need to for whatever reason.
+
+--Intro to Model Validations
+	> Model Validations allow us to simplify our code in our controllers when receiving a request.
+	> Format:
+		*****
+			class ClassName 
+			{
+				[Attribute] //APPLIES VALIDATION RULE ON THIS PROPERTY
+				public type PropertyName { get; set; }
+			}
+		*****

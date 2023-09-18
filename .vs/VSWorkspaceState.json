@@ -1,14 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\6.Controllers\\Demos",
-    "\\6.Controllers\\Demos\\IActionResultDemo",
-    "\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo",
-    "\\6.Controllers\\Demos\\IActionResultDemo\\IActionResultDemo\\Controllers",
-    "\\6.Controllers\\Notes",
     "\\7.ModelBinding",
+    "\\7.ModelBinding\\Demos",
+    "\\7.ModelBinding\\Demos\\ModelBindingDemo",
+    "\\7.ModelBinding\\Demos\\ModelBindingDemo\\ModelBindingDemo",
+    "\\7.ModelBinding\\Demos\\ModelBindingDemo\\ModelBindingDemo\\Controllers",
     "\\7.ModelBinding\\Notes"
   ],
-  "SelectedNode": "\\7.ModelBinding\\Notes\\ModelBinding.txt",
+  "SelectedNode": "\\7.ModelBinding\\Demos\\ModelBindingDemo\\ModelBindingDemo\\Controllers\\AudioBookController.cs",
   "PreviewInSolutionExplorer": false
 }
