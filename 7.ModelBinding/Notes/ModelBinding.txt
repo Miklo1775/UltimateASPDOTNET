@@ -53,6 +53,7 @@ Model Binding
 
 --Intro to Model Validations
 	> Model Validations allow us to simplify our code in our controllers when receiving a request.
+	> Model Validation occurs after Model Binding.
 	> Format:
 		*****
 			class ClassName 
@@ -61,3 +62,8 @@ Model Binding
 				public type PropertyName { get; set; }
 			}
 		*****
+
+--ModelState
+	> isValid => Specifies whether there is at least one validation error or not (boolean).
+	> Values => Contains each model property value with corresponding "Errors" property that contains list of validation errors of that model property.
+	> ErrorCount => Returns number of errors.

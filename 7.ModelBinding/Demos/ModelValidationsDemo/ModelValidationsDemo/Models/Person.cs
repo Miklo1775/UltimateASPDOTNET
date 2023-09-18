@@ -1,7 +1,11 @@
-﻿namespace ModelValidationsDemo.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ModelValidationsDemo.Models
 {
     public class Person
     {
+        //ALONGSIDE DEFAULT ERROR MESSAGE, WE CAN USE OUR OWN ERROR MESSAGE SUCH AS BELOW.
+        [Required(ErrorMessage = "Name of person is required")]
         public string? PersonName { get; set; }
         public string? Email { get; set; }
         public string? Phone { get; set; }
