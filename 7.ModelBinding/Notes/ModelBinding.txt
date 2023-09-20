@@ -77,3 +77,34 @@ Model Binding
 
 	> Range => Specifies minimum and maximum numerical value allowed.
 		*[Range(int minimum, int maximum, ErrorMessage = "Value")]
+
+	> RegularExpression => Specifies the valid pattern.
+		*[RegularExpression(string pattern, ErrorMessage = "Value")]
+
+	> EmailAddress => Specifies that the value should be a valid email address.
+		*[EmailAddress(ErrorMessage = "Value")]
+
+	> Phone => Specifies that the value should be a valid phone number.
+		*[Phone(ErrorMessage = "Value")]
+
+	> Compare => Specifies that the values of current property and other property should be the same.
+		*[Compare(string otherProperty, ErrorMessage = "Value")]
+
+	> Url => Specifies that the value should be a valid URL (website address).
+		*[Url(ErrorMessage = "Value")]
+
+	> ValidateNever => Specifies that the property should not be validated (excludes the property from model validation).
+		*[ValidateNever]
+
+--Custom Validations
+	> Format:
+		*****
+			class ClassName : ValidationAttribute
+			{
+				public override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+				{
+					//return ValidationResult.Success;
+					//[or] return new ValidatoinResult("error message")
+				}
+			}
+		*****
