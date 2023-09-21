@@ -5,6 +5,9 @@ namespace ModelValidationsDemo.Controllers
 {
     public class HomeController : Controller
     {
+        //THE BIND ATTRIBUTE BELOW WILL ONLY BIND THE PROPERTIES LISTED TO THE PERSON OBJECT. ALL OTHER VALUES WILL BE NULL.
+        //[Bind(nameof(Person.PersonName), nameof(Person.Email), nameof(Person.Password), nameof(Person.ConfirmPassword))]
+        
         [Route("register")]
         public IActionResult Index(Person person)
         {

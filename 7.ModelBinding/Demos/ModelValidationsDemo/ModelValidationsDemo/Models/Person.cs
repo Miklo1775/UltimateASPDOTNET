@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using ModelValidationsDemo.CustomValidators;
 using System.ComponentModel.DataAnnotations;
 
@@ -33,6 +34,8 @@ namespace ModelValidationsDemo.Models
         [Range(0, 999.99, ErrorMessage = "{0} should be a value between {1} and {2}")]
         public double? Price { get; set; }
 
+        //BINDNEVER WILL ALLOW TO BIND ALL PROPERTIES WITH THE EXCEPTION OF THE ONES YOU SPECIFY.
+        [BindNever]
         [MinimumYearValidator(2005, ErrorMessage = "Year should be less than {0}")]
         public DateTime? DateOfBirth { get; set; }
 

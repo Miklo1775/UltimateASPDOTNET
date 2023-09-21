@@ -125,3 +125,29 @@ Model Binding
 				}
 			}
 		*****
+
+--[Bind]
+	> This attribute specifies that only the specified properties should be included in model binding.
+	> By default, all properties are binded.
+	> Prevents over-posting (post values into unexpected properties) especially in "Create" scenarios.
+	> Format:
+		*****
+			class ClassNameController : Controller
+			{
+				public IActionResult ActionMethodNamme([Bind(nameof(ClassName.PropertyName), nameof(ClassName.PropertyName))] ClassName parameterName)
+				{
+				}
+			}
+		*****
+
+--[BindNever]
+	> This attribute specifies that the specified property should NOT be included in model binding.
+	> Useful when you have a lot of properties and only want to eliminate a few properties from model binding.
+	> Format: 
+		*****
+			class ModelClassName 
+			{
+				[BindNever]
+				public type PropertyName {get; set;}
+			}
+		*****
