@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ModelValidationsDemo.Models
 {
-    public class Person
+    public class Person : IValidatableObject
     {
         //ALONGSIDE DEFAULT ERROR MESSAGE, WE CAN USE OUR OWN ERROR MESSAGE SUCH AS BELOW.
         //THE DISPLAY ATTRIBUTE CAN DISPLAY THE VALUE INSTEAD OF THE PROPERTY.
@@ -36,11 +36,25 @@ namespace ModelValidationsDemo.Models
         [MinimumYearValidator(2005, ErrorMessage = "Year should be less than {0}")]
         public DateTime? DateOfBirth { get; set; }
 
+        public DateTime? FromDate {  get; set; }
 
+        [DateRangeValidator("FromDate", ErrorMessage = "From date should be older than To Date.")]
+        public DateTime? ToDate { get; set; }
+
+        public int? Age { get; set; }
 
         public override string ToString()
         {
             return $"Person Data Received:\nName: {this.PersonName}\nEmail: {this.Email}\nPhone: {this.Phone}\nPassword: {this.Password}\nConfirmed Password: {this.ConfirmPassword}\nPrice: {this.Price}\nDate of Birth: {this.DateOfBirth}";
+        }
+
+        //THIS VALIDATE METHOD WILL ONLY RUN AFTER THE ABOVE VALIDATIONS ARE CLEARED
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            if(DateOfBirth.HasValue == false && Age.HasValue == false)
+            {
+               yield return new ValidationResult("Either Date of Birth or Age needs to be supplied.", new[] { nameof(Age) });
+            }
         }
     }
 }

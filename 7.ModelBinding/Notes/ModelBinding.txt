@@ -108,3 +108,20 @@ Model Binding
 				}
 			}
 		*****
+
+--IValidatableObject
+	> Format:
+		*****
+			class ClassName : IValidatableObject
+			{
+				//model properties here
+
+				public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+				{
+					if(condition)
+					{
+						yield return new ValidationResult("error message");
+					}
+				}
+			}
+		*****
