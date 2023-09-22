@@ -8,11 +8,11 @@ namespace ModelValidationsDemo.Controllers
     {
         //THE BIND ATTRIBUTE BELOW WILL ONLY BIND THE PROPERTIES LISTED TO THE PERSON OBJECT. ALL OTHER VALUES WILL BE NULL.
         //[Bind(nameof(Person.PersonName), nameof(Person.Email), nameof(Person.Password), nameof(Person.ConfirmPassword))]
-        //INTERNALLY, FROMBODY CONVERTS THE JSON OBJECT INTO THE MODEL OBJECT
+        //INTERNALLY, [FROMBODY] CONVERTS THE JSON OBJECT INTO THE MODEL OBJECT
         //IF WE USE A CUSTOM MODEL BINDER PROVIDER, WE DONT HAVE TO INCLUDE THE MODELBINDER ATTRIBUTE FOR EACH ACTION METHOD THAT USES THE PERSON OBJECT.
         //[ModelBinder(BinderType = typeof(PersonModelBinder))]
         [Route("register")]
-        public IActionResult Index(Person person)
+        public IActionResult Index(Person person, [FromHeader(Name = "User-Agent")]string UserAgent )
         {
             //ModelState.IsValid WILL RETURN TRUE IF NO ERRORS OR FALSE IF ATLEAST ONE ERROR
             if(!ModelState.IsValid)
@@ -36,7 +36,8 @@ namespace ModelValidationsDemo.Controllers
                 //SENDING ERRORS ALONG WITH 400 BAD REQUEST
                 return BadRequest(errors);
             }
-            return Content($"{person}");
+
+            return Content($"{person}, {UserAgent}");
         }
     }
 }
