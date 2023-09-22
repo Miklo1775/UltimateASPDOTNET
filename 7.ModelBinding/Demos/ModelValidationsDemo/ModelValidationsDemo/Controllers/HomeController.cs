@@ -8,8 +8,9 @@ namespace ModelValidationsDemo.Controllers
         //THE BIND ATTRIBUTE BELOW WILL ONLY BIND THE PROPERTIES LISTED TO THE PERSON OBJECT. ALL OTHER VALUES WILL BE NULL.
         //[Bind(nameof(Person.PersonName), nameof(Person.Email), nameof(Person.Password), nameof(Person.ConfirmPassword))]
         
+        //INTERNALLY, FROMBODY CONVERTS THE JSON OBJECT INTO THE MODEL OBJECT
         [Route("register")]
-        public IActionResult Index(Person person)
+        public IActionResult Index([FromBody]Person person)
         {
             //ModelState.IsValid WILL RETURN TRUE IF NO ERRORS OR FALSE IF ATLEAST ONE ERROR
             if(!ModelState.IsValid)

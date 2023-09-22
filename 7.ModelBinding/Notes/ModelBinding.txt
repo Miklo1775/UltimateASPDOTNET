@@ -151,3 +151,22 @@ Model Binding
 				public type PropertyName {get; set;}
 			}
 		*****
+
+--[FromBody]
+	> Format:
+		*****
+			//ENABLES THE INPUT FORMATTERS TO READ DATA FROM THE REQUEST BODY (AS JSON OR XML OR CUSTOM) ONLY
+			public IActionResult ActionMethodName([FromBody] type parameter)
+			{
+				//code here
+			}
+		*****
+
+--Input Formatters
+	> Input Formatters are the internal classes in ASP.NET that are used to convert or transform the request body into a model object.
+	> By default, the formatter used is the JsonInputFormatter.
+	> To enable the XML formatters, we need to add this service:
+		*****
+			builder.Services.AddControllers().AddXmlSerializerFormatters();
+		*****
+	> Based on the headers, the appropriate input formatter will be selected.
