@@ -46,6 +46,8 @@ namespace ModelValidationsDemo.Models
 
         public int? Age { get; set; }
 
+        public List<string?> Tags { get; set; } = new List<string?>();
+
         public override string ToString()
         {
             return $"Person Data Received:\nName: {this.PersonName}\nEmail: {this.Email}\nPhone: {this.Phone}\nPassword: {this.Password}\nConfirmed Password: {this.ConfirmPassword}\nPrice: {this.Price}\nDate of Birth: {this.DateOfBirth}";

@@ -12,7 +12,7 @@ namespace ModelValidationsDemo.Controllers
         //IF WE USE A CUSTOM MODEL BINDER PROVIDER, WE DONT HAVE TO INCLUDE THE MODELBINDER ATTRIBUTE FOR EACH ACTION METHOD THAT USES THE PERSON OBJECT.
         //[ModelBinder(BinderType = typeof(PersonModelBinder))]
         [Route("register")]
-        public IActionResult Index([FromBody]  Person person)
+        public IActionResult Index(Person person)
         {
             //ModelState.IsValid WILL RETURN TRUE IF NO ERRORS OR FALSE IF ATLEAST ONE ERROR
             if(!ModelState.IsValid)
