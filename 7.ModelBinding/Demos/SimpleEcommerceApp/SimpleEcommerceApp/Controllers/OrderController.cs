@@ -13,8 +13,10 @@ namespace SimpleEcommerceApp.Controllers
                     string errors = string.Join("\n", ModelState.Values.SelectMany(value => value.Errors).Select(err => err.ErrorMessage));
                     return BadRequest(errors);
                 }
+              Random random = new Random();
+              order.OrdeNo = random.Next();
 
-            return Json(order);
+              return Json(order);
         }
     }
 }
