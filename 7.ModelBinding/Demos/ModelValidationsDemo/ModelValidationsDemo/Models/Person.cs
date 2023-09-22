@@ -35,7 +35,7 @@ namespace ModelValidationsDemo.Models
         public double? Price { get; set; }
 
         //BINDNEVER WILL ALLOW TO BIND ALL PROPERTIES WITH THE EXCEPTION OF THE ONES YOU SPECIFY.
-        [BindNever]
+        //[BindNever]
         [MinimumYearValidator(2005, ErrorMessage = "Year should be less than {0}")]
         public DateTime? DateOfBirth { get; set; }
 

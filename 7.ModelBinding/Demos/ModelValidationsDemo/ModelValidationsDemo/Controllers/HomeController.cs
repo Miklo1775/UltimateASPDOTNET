@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ModelValidationsDemo.CustomModelBinders;
 using ModelValidationsDemo.Models;
 
 namespace ModelValidationsDemo.Controllers
@@ -10,7 +11,7 @@ namespace ModelValidationsDemo.Controllers
         
         //INTERNALLY, FROMBODY CONVERTS THE JSON OBJECT INTO THE MODEL OBJECT
         [Route("register")]
-        public IActionResult Index([FromBody]Person person)
+        public IActionResult Index([FromBody] [ModelBinder(BinderType = typeof(PersonModelBinder))] Person person)
         {
             //ModelState.IsValid WILL RETURN TRUE IF NO ERRORS OR FALSE IF ATLEAST ONE ERROR
             if(!ModelState.IsValid)

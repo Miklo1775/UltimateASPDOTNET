@@ -170,3 +170,20 @@ Model Binding
 			builder.Services.AddControllers().AddXmlSerializerFormatters();
 		*****
 	> Based on the headers, the appropriate input formatter will be selected.
+
+--Custom Model Binder
+	> To perform complex manipulations, we need to use a Custom Model Binder.
+	> Format:
+		*****
+			class ClassName : IModelBinder
+			{
+				public Task BindModelAsync(ModelBindingContext bindingContext)
+				{
+					//GETS VALUE FROM REQUEST
+					bindingContext.ValueProvider.GetValue("FirstName");
+
+					//RETURNS MODEL OBJECT AFTER READING DATA FROM THE REQUEST
+					bindingContext.Result = ModelBindingResult.Success(your_object);
+				}
+			}
+		*****
