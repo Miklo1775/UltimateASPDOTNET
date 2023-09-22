@@ -187,3 +187,16 @@ Model Binding
 				}
 			}
 		*****
+
+--Custom Model Binder Provider
+	> Format:
+		*****
+			class ClassName : IModelBinderProvider
+			{
+				public IModelBinder GetBinder(ModelBinderProviderContext providerContext)
+				{
+					//RETURNS TYPE OF CUSTOM MODEL BINDER CLASS TO BE INVOKED
+					return new BinderTypeModelBinder(typeof(YourModelBinderClassName));
+				}
+			}
+		*****
