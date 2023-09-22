@@ -1,0 +1,40 @@
+Razor Views
+
+--MVC Architecture
+	> "Model-View-Controller" (MVC) is an architectural pattern that separates application code into three main components: Models, Views, and Controllers.
+	> Controller can invoke the Model and View.
+	> The View can invoke the Model.
+	> 1. Controller invokes Business Model.
+	> 2. Controller creates object of VIew Model.
+	> 3. Controller invokes View.
+	> 4. View accesses View Model.
+	> The Action Method is the entry point for our MVC Architecture.
+	> The Controller takes responsibility of receiving the request and decides what response should be sent.
+	> For example, when a user logs in, the Action Method sends the credentials to the Business Model to perform authorization validation and then the business model sends it back. Then the Action Method creates a View Model. After, it supplies the View Model object to the View to present the data. The View contains the HTML code to visualize the data.
+
+--Responsibilities of Model-View-Controller (in order)
+	> Controller:
+		*Receives HTTP request data.
+		*Invoke business model to execute business logic.
+
+	> Business Model:
+		*Receives input data from the controller.
+		*Performs business operations such as retrieving/inserting data from/to database.
+		*Sends data of the database back to the controller.
+
+	> Controller:
+		*Creates object of ViewModel from the controller.
+		*Selects a View & invoke it & also pass the object of the ViewModel to the View.
+
+	> View:
+		*Receives the object of ViewModel from the controller.
+		*Accesses the properties of ViewModel to render data in HTML code.
+		*After the View renders, the rendered View result will be sent as response.
+
+--Benefits/Goals of MVC Architectural Pattern
+	 > Allows for separation of concerns.
+	 > Each component (model, view, and controller) performs a single responsibility.
+	 > Identifying and fixing errors is simpler.
+	 > Each component (model, view, and controller) can be developed independently.
+	 > In practical, both view and controller depend of the model. Model doesn't depend on neither view nor the controller. This is one of the key benefits of the 'clean separation'. This separation allows the model to be built and tested independently.
+	 > Unit testing each individual component is easier.
