@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using SimpleEcommerceApp.CustomValidators;
 
 namespace SimpleEcommerceApp.Models
 {
@@ -6,6 +7,7 @@ namespace SimpleEcommerceApp.Models
     {
         public int? OrdeNo { get; set; }
         [Required]
+        [DateCheckValidator(ErrorMessage = "Date should be greater than or equal to 2001-01-01")]
         public DateTime OrderDate { get; set; }
         [Required]
         public double InvoicePrice { get; set; }
