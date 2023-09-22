@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SimpleEcommerceApp/1.0.0": {
+        "runtime": {
+          "SimpleEcommerceApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleEcommerceApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
