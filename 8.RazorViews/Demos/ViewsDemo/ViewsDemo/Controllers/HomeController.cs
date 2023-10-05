@@ -7,7 +7,10 @@ namespace ViewsDemo.Controllers
         [Route("home")]
         public IActionResult Index()
         {
-            return View();
+            //IF VIEW NAME IS NOT SPECIFIED, IT WILL USE THE ACTION NAME Index.cshtml
+            //IT WILL SEARCH FOR THE VIEW AT Views/Home/Index.cshtml
+            return View(); 
+            //return new ViewResult() {ViewName = "abc"};
         }
     }
 }
