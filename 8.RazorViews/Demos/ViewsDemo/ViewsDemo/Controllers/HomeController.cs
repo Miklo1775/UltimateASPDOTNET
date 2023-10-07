@@ -5,6 +5,7 @@ namespace ViewsDemo.Controllers
     public class HomeController : Controller
     {
         [Route("home")]
+        [Route("/")]
         public IActionResult Index()
         {
             //IF VIEW NAME IS NOT SPECIFIED, IT WILL USE THE ACTION NAME Index.cshtml

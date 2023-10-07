@@ -45,3 +45,20 @@ Razor Views
 		1. Controller creates object of View Model and fills data in its properties.
 		2. Controller selects an appropriate view and invokes the same View & supplies object of View Model to the View.
 		3. View accesses the View Model.
+
+--Razor View Engine
+	> Razor Code Block => Razor code block is a C# code block that contains one or more lines of C# code that can contain any statements and local functions.
+		>> Format:
+			*****
+				@{
+					C# / html code here
+				}
+			*****
+
+	> Razor Expressions => Razor expression is a C# expression (accessing a field, property, or method call) that returns a value.
+		>> Format:
+			*****
+				@Expression
+					--or--
+				@(Expression)
+			*****
