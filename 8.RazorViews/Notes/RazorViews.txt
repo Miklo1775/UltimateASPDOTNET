@@ -100,3 +100,12 @@ Razor Views
                 // C# / html code here
             }
         *****
+        
+--Razor - for 
+    > Format: 
+        *****
+            @for(initialization; condition; iteration)
+            {
+                C# / html code here
+            }
+        *****

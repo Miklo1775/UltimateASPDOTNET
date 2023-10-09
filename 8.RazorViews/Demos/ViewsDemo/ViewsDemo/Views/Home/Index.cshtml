@@ -52,19 +52,31 @@
         @*         ; *@
         @*         break; *@
         @* } *@
-    @foreach (Person person in persons)
+    @* @foreach (Person person in persons) *@
+    @* { *@
+    @*     <div>@person.Name *@
+    @*         @if (person.DateOfBirth != null) *@
+    @*         { *@
+    @*             <span>@person.DateOfBirth</span> *@
+    @*         } *@
+    @*         else *@
+    @*         { *@
+    @*             <span>Date of Birth: Unknown</span> *@
+    @*         } *@
+    @*          *@
+    @*     </div> *@
+    @* } *@
+    
+    @for (int i = 0; i < 2; i++)
     {
+        Person person = persons[i];
         <div>@person.Name
             @if (person.DateOfBirth != null)
             {
-                <span>@person.DateOfBirth</span>
+                <span>Date of Birth: @person.DateOfBirth</span>
             }
-            else
-            {
-                <span>Date of Birth: Unknown</span>
-            }
-            
         </div>
+        
     }
     </body>
 </html>
