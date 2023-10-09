@@ -109,3 +109,16 @@ Razor Views
                 C# / html code here
             }
         *****
+        
+--Razor - Literal
+    > Format 1:
+        *****
+            @{
+                @: static text
+            }
+        *****
+        
+    > Format 2:
+        *****
+            <text>static text</text>
+        *****
