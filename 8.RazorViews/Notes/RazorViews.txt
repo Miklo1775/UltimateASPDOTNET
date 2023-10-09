@@ -122,3 +122,13 @@ Razor Views
         *****
             <text>static text</text>
         *****
+        
+--Razor - Local Functions
+    > Local functions are only callable within the same view,
+    > Format:
+        @{
+            return_type method_name(arguments)
+            {
+                // C# / html code here
+            }
+        }

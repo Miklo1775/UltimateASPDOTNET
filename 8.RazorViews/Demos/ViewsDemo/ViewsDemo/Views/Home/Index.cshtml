@@ -13,6 +13,37 @@
     };
 }
 
+@{
+    //WHEN USING @functions, THE FUNCTION IS CONVERTED TO A METHOD. WE CAN THEN ADD FIELD AND PROPERTIES. BEHIND THE SCENES, THESE ARE TURNED INTO A CLASS.
+}
+
+@functions{
+
+    double? GetAge(DateTime? dateOfBirth)
+    {
+        if (dateOfBirth is not null)
+        {
+            return System.Math.Round((DateTime.Now - dateOfBirth.Value).TotalDays / 365.25);
+        }
+
+        return null;
+    }
+    
+}
+
+@{
+    //Local Function
+    double? GetAgeLocal(DateTime? dateOfBirth)
+    {
+        if (dateOfBirth is not null)
+        {
+            return System.Math.Round((DateTime.Now - dateOfBirth.Value).TotalDays / 365.25);
+        }
+
+        return null;
+    }
+}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -70,11 +101,12 @@
     @for (int i = 0; i < 2; i++)
     {
         Person person = persons[i];
-        <text>Hello, </text>
+        @* <text>Hello, </text> *@
         <div>@person.Name
             @if (person.DateOfBirth != null)
             {
-                <span>Date of Birth: @person.DateOfBirth</span>
+                <span>Date of Birth: @person.DateOfBirth.Value.ToString("MM/dd/yyyy")</span>
+                <span>@GetAge(person.DateOfBirth) years old</span>                                                                     
             }
         </div>
         
