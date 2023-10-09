@@ -2,8 +2,8 @@
 
 @{
     string appTitle = "Views Demo";
-    string heading = "Views Example";
-    // Person person = new Person() {}
+    // string heading = "Views Example";
+    Person person = new Person() { Name = "Chichi", DateOfBirth = Convert.ToDateTime("2021-04-01")};
 }
 
 <!DOCTYPE html>
@@ -13,7 +13,11 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        <h1>@heading</h1>
-        <h2>This is a view demo</h2>
+        <h1>Welcome, @person.Name</h1>
+        <h2>Your birthday is @person.DateOfBirth</h2>
+    @{
+        double age = Math.Round((DateTime.Now - person.DateOfBirth).TotalDays / 365.25);
+    }
+    <h2>You are @age years old!</h2>
     </body>
 </html>

@@ -62,3 +62,9 @@ Razor Views
 					--or--
 				@(Expression)
 			*****
+			
+--More on Views
+    > Views contain HTML markup with Razor markup (C# code in view to render dynamic content).
+    > Razor is the view engine that defines syntax to write C# code in the view. @ is the syntax of Razor syntax.
+    > View is NOT supposed to have lots of C# code. Any code written in the view should relate to presenting the content (presentation logic).
+    > View should neither directly call the business model nor call the controllers action methods, but it can send requests to the controller.

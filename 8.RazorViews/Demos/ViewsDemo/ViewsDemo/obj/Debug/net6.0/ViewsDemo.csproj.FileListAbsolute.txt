@@ -28,7 +28,6 @@ C:/Users/Vic/Desktop/TechCourses/UltimateASP.NET/8.RazorViews/Demos/ViewsDemo/Vi
 C:/Users/Vic/Desktop/TechCourses/UltimateASP.NET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/obj/Debug/net6.0/ViewsDemo.RazorAssemblyInfo.cs
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/appsettings.Development.json
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/appsettings.json
-/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/ViewsDemo.staticwebassets.runtime.json
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/ViewsDemo
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/ViewsDemo.deps.json
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/ViewsDemo.runtimeconfig.json
