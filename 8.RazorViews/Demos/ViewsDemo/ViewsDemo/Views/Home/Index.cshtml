@@ -17,7 +17,7 @@
     //WHEN USING @functions, THE FUNCTION IS CONVERTED TO A METHOD. WE CAN THEN ADD FIELD AND PROPERTIES. BEHIND THE SCENES, THESE ARE TURNED INTO A CLASS.
 }
 
-@functions{
+@{
 
     double? GetAge(DateTime? dateOfBirth)
     {
@@ -28,7 +28,8 @@
 
         return null;
     }
-    
+
+    string alertMessage = $"<script>alert('{persons.Count} people found')</script>";
 }
 
 @{
@@ -50,66 +51,67 @@
         <title>@appTitle</title>
         <meta charset="utf-8" />
     </head>
-    <body>
-        @* <h1>Welcome, @person.Name</h1> *@
-        
-        @* // RAZOR - IF/ELSE     *@
-        @* @if (person.DateOfBirth.HasValue) *@
-        @*  { *@
-        @*      <h2>Your birthday is @person.DateOfBirth</h2> *@
-        @*      double age = Math.Round((DateTime.Now - person.DateOfBirth).Value.TotalDays / 365.25); *@
-        @*      <h2>You are @age years old!</h2> *@
-        @*  } *@
-        @* else *@
-        @* { *@
-        @*     <h1>You should consider adding your birthday!</h1> *@
-        @* } *@
-        @* *@
-        @* $1$ //RAZOR - SWITCH/CASE #1# *@
-        @* @switch (person.PersonGender) *@
-        @* { *@
-        @*     case Gender.Male: *@
-        @*         <p>Gender: Male</p> *@
-        @*         ; *@
-        @*         break; *@
-        @*          *@
-        @*     case Gender.Female: *@
-        @*         <p>Gender: Female</p> *@
-        @*         ; *@
-        @*         break; *@
-        @*          *@
-        @*     case Gender.Other: *@
-        @*         <p>Gender: Other</p> *@
-        @*         ; *@
-        @*         break; *@
-        @* } *@
-    @* @foreach (Person person in persons) *@
-    @* { *@
-    @*     <div>@person.Name *@
-    @*         @if (person.DateOfBirth != null) *@
-    @*         { *@
-    @*             <span>@person.DateOfBirth</span> *@
-    @*         } *@
-    @*         else *@
-    @*         { *@
-    @*             <span>Date of Birth: Unknown</span> *@
-    @*         } *@
-    @*          *@
-    @*     </div> *@
-    @* } *@
-    
-    @for (int i = 0; i < 2; i++)
-    {
-        Person person = persons[i];
+<body>
+@Html.Raw(alertMessage)
+@* <h1>Welcome, @person.Name</h1> *@
+
+@* // RAZOR - IF/ELSE     *@
+@* @if (person.DateOfBirth.HasValue) *@
+@*  { *@
+@*      <h2>Your birthday is @person.DateOfBirth</h2> *@
+@*      double age = Math.Round((DateTime.Now - person.DateOfBirth).Value.TotalDays / 365.25); *@
+@*      <h2>You are @age years old!</h2> *@
+@*  } *@
+@* else *@
+@* { *@
+@*     <h1>You should consider adding your birthday!</h1> *@
+@* } *@
+@* *@
+@* $1$ //RAZOR - SWITCH/CASE #1# *@
+@* @switch (person.PersonGender) *@
+@* { *@
+@*     case Gender.Male: *@
+@*         <p>Gender: Male</p> *@
+@*         ; *@
+@*         break; *@
+@*          *@
+@*     case Gender.Female: *@
+@*         <p>Gender: Female</p> *@
+@*         ; *@
+@*         break; *@
+@*          *@
+@*     case Gender.Other: *@
+@*         <p>Gender: Other</p> *@
+@*         ; *@
+@*         break; *@
+@* } *@
+@* @foreach (Person person in persons) *@
+@* { *@
+@*     <div>@person.Name *@
+@*         @if (person.DateOfBirth != null) *@
+@*         { *@
+@*             <span>@person.DateOfBirth</span> *@
+@*         } *@
+@*         else *@
+@*         { *@
+@*             <span>Date of Birth: Unknown</span> *@
+@*         } *@
+@*          *@
+@*     </div> *@
+@* } *@
+
+@for (int i = 0; i < 2; i++)
+{
+    Person person = persons[i];
         @* <text>Hello, </text> *@
-        <div>@person.Name
-            @if (person.DateOfBirth != null)
-            {
-                <span>Date of Birth: @person.DateOfBirth.Value.ToString("MM/dd/yyyy")</span>
-                <span>@GetAge(person.DateOfBirth) years old</span>                                                                     
-            }
-        </div>
-        
-    }
-    </body>
+    <div>@person.Name
+        @if (person.DateOfBirth != null)
+        {
+            <span>Date of Birth: @person.DateOfBirth.Value.ToString("MM/dd/yyyy")</span>
+            <span>@GetAge(person.DateOfBirth) years old</span>
+        }
+    </div>
+
+}
+</body>
 </html>

@@ -132,3 +132,13 @@ Razor Views
                 // C# / html code here
             }
         }
+        
+--Html.Raw()
+    > Format: 
+        *****
+            @{
+                string variable = "html code";
+            }
+            
+            @Html.Raw(variable) //prints the html markup without encoding (converting html tags into plain text)
+        *****
