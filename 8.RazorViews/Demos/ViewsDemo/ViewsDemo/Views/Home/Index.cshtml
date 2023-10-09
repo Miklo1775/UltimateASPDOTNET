@@ -3,7 +3,14 @@
 @{
     string appTitle = "Views Demo";
     // string heading = "Views Example";
-    Person person = new Person() { Name = "Chichi", DateOfBirth = null, PersonGender = Gender.Female};
+    // Person person = new Person() { Name = "Chichi", DateOfBirth = null, PersonGender = Gender.Female};
+    List<Person> persons = new List<Person>()
+    {
+        new Person(){Name = "Squishy", DateOfBirth = DateTime.Parse("2023-01-01"), PersonGender = Gender.Female},
+        new Person() {Name = "Chichi", DateOfBirth = DateTime.Parse("2021-04-01"), PersonGender = Gender.Female},
+        new Person(){Name = "Sylvestre", DateOfBirth = DateTime.Parse("2022-11-01"), PersonGender = Gender.Male},
+        new Person() { Name = "Kinto", DateOfBirth = null, PersonGender = Gender.Male}
+    };
 }
 
 <!DOCTYPE html>
@@ -13,38 +20,51 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        <h1>Welcome, @person.Name</h1>
+        @* <h1>Welcome, @person.Name</h1> *@
         
         @* // RAZOR - IF/ELSE     *@
-        @if (person.DateOfBirth.HasValue)
-         {
-             <h2>Your birthday is @person.DateOfBirth</h2>
-             double age = Math.Round((DateTime.Now - person.DateOfBirth).Value.TotalDays / 365.25);
-             <h2>You are @age years old!</h2>
-         }
-        else
-        {
-            <h1>You should consider adding your birthday!</h1>
-        }
-    
-        @* //RAZOR - SWITCH/CASE *@
-        @switch (person.PersonGender)
-        {
-            case Gender.Male:
-                <p>Gender: Male</p>
-                ;
-                break;
-                
-            case Gender.Female:
-                <p>Gender: Female</p>
-                ;
-                break;
-                
-            case Gender.Other:
-                <p>Gender: Other</p>
-                ;
-                break;
-        }
-    
+        @* @if (person.DateOfBirth.HasValue) *@
+        @*  { *@
+        @*      <h2>Your birthday is @person.DateOfBirth</h2> *@
+        @*      double age = Math.Round((DateTime.Now - person.DateOfBirth).Value.TotalDays / 365.25); *@
+        @*      <h2>You are @age years old!</h2> *@
+        @*  } *@
+        @* else *@
+        @* { *@
+        @*     <h1>You should consider adding your birthday!</h1> *@
+        @* } *@
+        @* *@
+        @* $1$ //RAZOR - SWITCH/CASE #1# *@
+        @* @switch (person.PersonGender) *@
+        @* { *@
+        @*     case Gender.Male: *@
+        @*         <p>Gender: Male</p> *@
+        @*         ; *@
+        @*         break; *@
+        @*          *@
+        @*     case Gender.Female: *@
+        @*         <p>Gender: Female</p> *@
+        @*         ; *@
+        @*         break; *@
+        @*          *@
+        @*     case Gender.Other: *@
+        @*         <p>Gender: Other</p> *@
+        @*         ; *@
+        @*         break; *@
+        @* } *@
+    @foreach (Person person in persons)
+    {
+        <div>@person.Name
+            @if (person.DateOfBirth != null)
+            {
+                <span>@person.DateOfBirth</span>
+            }
+            else
+            {
+                <span>Date of Birth: Unknown</span>
+            }
+            
+        </div>
+    }
     </body>
 </html>

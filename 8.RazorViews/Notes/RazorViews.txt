@@ -91,3 +91,12 @@ Razor Views
                 default: // C$ / html code here; break;
             }
         *****
+        
+--Razor - foreach
+    > Format:
+        *****
+            @foreach (var variable in collection)
+            {
+                // C# / html code here
+            }
+        *****
