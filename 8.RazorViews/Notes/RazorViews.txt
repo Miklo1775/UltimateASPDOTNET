@@ -68,3 +68,26 @@ Razor Views
     > Razor is the view engine that defines syntax to write C# code in the view. @ is the syntax of Razor syntax.
     > View is NOT supposed to have lots of C# code. Any code written in the view should relate to presenting the content (presentation logic).
     > View should neither directly call the business model nor call the controllers action methods, but it can send requests to the controller.
+    
+--Razor - if
+    > Format:
+        *****
+            @if(condition)
+            {
+               // C# / html code here
+            }
+            else 
+            {
+               // C# / html code here
+            }
+            
+--Razor - Switch/Case
+    > Format: 
+        *****
+            @switch (variable)
+            {
+                case value1: // C# / html code here; break;
+                case value2: // C# / html code here; break;
+                default: // C$ / html code here; break;
+            }
+        *****
