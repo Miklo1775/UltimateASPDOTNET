@@ -1,19 +1,11 @@
 {
   "Version": 1,
-  "Hash": "j0ff/GNVY2jotvCMazWRNiBXy4R8x1b0gwcm4mDevHw=",
+  "Hash": "wqOReSYBAjPgpZByX+n+NkJzOyxa9cZTVdAQ7bud600=",
   "Source": "ViewsDemo",
   "BasePath": "_content/ViewsDemo",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "ViewsDemo\\wwwroot",
-      "Source": "ViewsDemo",
-      "ContentRoot": "C:\\Users\\Vic\\Desktop\\TechCourses\\UltimateASP.NET\\8.RazorViews\\Demos\\ViewsDemo\\ViewsDemo\\wwwroot\\",
-      "BasePath": "_content/ViewsDemo",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": []
 }
