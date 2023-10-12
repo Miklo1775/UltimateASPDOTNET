@@ -54,3 +54,4 @@ C:/Users/Vic/Desktop/TechCourses/UltimateASP.NET/8.RazorViews/Demos/ViewsDemo/Vi
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/obj/Debug/net6.0/ViewsDemo.pdb
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/obj/Debug/net6.0/ViewsDemo.genruntimeconfig.cache
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/obj/Debug/net6.0/ref/ViewsDemo.dll
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/bin/Debug/net6.0/ViewsDemo.staticwebassets.runtime.json

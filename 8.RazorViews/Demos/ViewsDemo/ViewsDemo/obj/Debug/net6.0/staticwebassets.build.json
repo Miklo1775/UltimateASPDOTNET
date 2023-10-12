@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "wqOReSYBAjPgpZByX+n+NkJzOyxa9cZTVdAQ7bud600=",
+  "Hash": "QqS3V7jrt2nZgldqTAwbM2cHXVsjnOwmQ6+inFLJ88Q=",
   "Source": "ViewsDemo",
   "BasePath": "_content/ViewsDemo",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ViewsDemo/wwwroot",
+      "Source": "ViewsDemo",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/wwwroot/",
+      "BasePath": "_content/ViewsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/wwwroot/StyleSheet.css",
+      "SourceId": "ViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/wwwroot/",
+      "BasePath": "_content/ViewsDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/StyleSheet.css"
+    }
+  ]
 }
