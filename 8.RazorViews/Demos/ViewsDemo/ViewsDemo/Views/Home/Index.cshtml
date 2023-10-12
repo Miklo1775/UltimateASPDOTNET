@@ -1,7 +1,9 @@
 ﻿@using ViewsDemo.Models;
 
 @{
-    List<Person>? persons = (List<Person>?)ViewData["people"];
+    // List<Person>? persons = (List<Person>?)ViewData["people"];
+    //ONE BENEFIT OF VIEWBAG IS THAT IT READS THE DATA FROM VIEWDATA AND THAT YOU CAN ACCESS THAT DATA WITHOUT TYPECASTING.
+    List<Person> persons = ViewBag.people;
     // string appTitle = "Views Demo";
     // string heading = "Views Example";
     // Person person = new Person() { Name = "Chichi", DateOfBirth = null, PersonGender = Gender.Female};

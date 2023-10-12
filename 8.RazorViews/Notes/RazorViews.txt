@@ -150,3 +150,9 @@ Razor Views
       class.
     > It is of Microsoft.AspNet.Mvc.ViewFeatures.ViewDataDictionary type.
     > It is derived from IDictionary<KeyValuePair<string, object>> type.
+    
+ --ViewBag
+    > ViewBag is a property of Controller and View, that is used to access the ViewData easily.
+    > It is of type 'dynamic'.
+    > The 'dynamic' type is similar to 'var', but it checks the data type at run-time rather than compilation time.
+    > If you try to access a non-existing property in the ViewBag, it returns null.

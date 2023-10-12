@@ -18,7 +18,8 @@ namespace ViewsDemo.Controllers
             };
             //IF VIEW NAME IS NOT SPECIFIED, IT WILL USE THE ACTION NAME Index.cshtml
             //IT WILL SEARCH FOR THE VIEW AT Views/Home/Index.cshtml
-            ViewData["people"] = persons;
+            // ViewData["people"] = persons;
+            ViewBag.people = persons;
             ViewData["appTitle"] = "ASP.NET Core View Demo";
             return View(); 
             //return new ViewResult() {ViewName = "abc"};
