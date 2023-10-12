@@ -142,3 +142,7 @@ Razor Views
             
             @Html.Raw(variable) //prints the html markup without encoding (converting html tags into plain text)
         *****
+        
+ --ViewData
+    > ViewData is a dictionary object that is automatically created up on receiving a request will be automatically 
+      deleted before sending response to the client. It is mainly used to send data from controller to view.
