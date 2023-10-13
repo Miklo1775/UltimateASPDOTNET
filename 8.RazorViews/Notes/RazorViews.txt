@@ -156,3 +156,7 @@ Razor Views
     > It is of type 'dynamic'.
     > The 'dynamic' type is similar to 'var', but it checks the data type at run-time rather than compilation time.
     > If you try to access a non-existing property in the ViewBag, it returns null.
+    
+--Strongly Typed Views
+    > A strongly typed view is a view that is bound to a specified model class.
+    > Mainly used to access the model object/model collection easily in the view.
