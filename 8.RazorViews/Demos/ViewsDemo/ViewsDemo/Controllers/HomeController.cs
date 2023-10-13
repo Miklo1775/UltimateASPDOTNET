@@ -51,5 +51,24 @@ namespace ViewsDemo.Controllers
             
             return View("Details", matchedPerson);
         }
+
+        [Route("person-with-product")]
+        public IActionResult PersonWithProduct()
+        {
+            Person person = new Person()
+            {
+                Name = "Chichi", PersonGender =
+                    Gender.Female,
+                DateOfBirth = DateTime.Parse("2021-04-01")
+            };
+
+            Product product = new Product()
+                { ProductId = 1, ProductName = "Springy Toys" };
+
+            PersonAndProductWrapper chichiOrder = new PersonAndProductWrapper
+                () { PersonData = person, ProductData = product };
+            
+            return View("PersonAndProduct",chichiOrder);
+        }
     }
 }
