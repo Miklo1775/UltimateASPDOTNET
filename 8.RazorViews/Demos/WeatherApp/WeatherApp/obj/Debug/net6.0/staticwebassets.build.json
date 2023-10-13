@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "QZ/JwyVm4ynOmc4povKGbiWoBEG1vLUPYFxkeJ2zR98=",
+  "Source": "WeatherApp",
+  "BasePath": "_content/WeatherApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WeatherApp/wwwroot",
+      "Source": "WeatherApp",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/wwwroot/",
+      "BasePath": "_content/WeatherApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/wwwroot/Stylesheet.css",
+      "SourceId": "WeatherApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/wwwroot/",
+      "BasePath": "_content/WeatherApp",
+      "RelativePath": "Stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Stylesheet.css"
+    }
+  ]
+}

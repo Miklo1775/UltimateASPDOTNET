@@ -14,3 +14,7 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/Views/Home/AllCities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BbGxDaXRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
