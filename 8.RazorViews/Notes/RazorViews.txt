@@ -162,3 +162,8 @@ Razor Views
     > Mainly used to access the model object/model collection easily in the view.
     > Can be bound to a single model directly, but that model class can have 
       references to objects of other model classes.
+      
+ --_ViewImports.cshtml
+    > A special file in the "Views" folder or its subfolder, which executes 
+    automatically before execution of a view.
+    > Mainly used to import common namespaces that are to be imported in a view.

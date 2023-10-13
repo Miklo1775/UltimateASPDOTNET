@@ -27,3 +27,7 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/Views/Home/PersonAndProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QZXJzb25BbmRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/ViewsDemo/ViewsDemo/Views/Home/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
