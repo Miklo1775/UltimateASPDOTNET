@@ -167,3 +167,8 @@ Razor Views
     > A special file in the "Views" folder or its subfolder, which executes 
     automatically before execution of a view.
     > Mainly used to import common namespaces that are to be imported in a view.
+    
+ --Shared Views
+    > Shared views are placed in "Shared" folder within the "Views" folder.
+    > They are accessible from any controller if the view is NOT present in the 
+    "Views\ControllerName" folder.

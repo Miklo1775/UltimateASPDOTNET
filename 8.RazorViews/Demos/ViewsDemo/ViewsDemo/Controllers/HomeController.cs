@@ -70,5 +70,13 @@ namespace ViewsDemo.Controllers
             
             return View("PersonAndProduct",chichiOrder);
         }
+        
+        [Route("home/products-all")]
+        public IActionResult All()
+        {
+	        //Views/Products/All.cshtml || /Views/Shared/All.cshtml
+	        return View();
+		
+        }
     }
 }
