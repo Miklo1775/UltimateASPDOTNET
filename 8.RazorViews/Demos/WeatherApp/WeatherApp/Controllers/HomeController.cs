@@ -34,6 +34,24 @@ public class HomeController : Controller
 	[Route("/")]
 	public IActionResult AllCities()
 	{
-		return View(_context);
+		return View( "City",_context);
+	}
+
+	[Route("single-city/{cityCode}")]
+	public IActionResult SingleCity(string? cityCode)
+	{
+		if (cityCode == null)
+		{
+			return BadRequest("City Code cannot be null.");
+		}
+
+		List<CityWeather> city = new List<CityWeather>()
+		{
+			_context.Single(city =>
+				city.CityUniqueCode!.ToLower() == cityCode
+					.ToLower())
+		};
+	
+	return View("City" ,city);
 	}
 }

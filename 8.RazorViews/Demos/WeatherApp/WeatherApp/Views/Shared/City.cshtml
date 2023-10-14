@@ -1,0 +1,76 @@
+
+@model List<CityWeather>
+
+@{
+	string? DetermineAnchorPlacement(int count)
+	{
+		if (count == 1)
+		{
+			return "anchor-bottom";
+		}
+		return null;
+	}
+	
+	string CheckTemp(int temp)
+	{
+		if (temp < 44)
+		{
+			return "blue";
+		}
+		else if (temp <= 74)
+		{
+			return "green";
+		}
+		else
+		{
+			return "red";
+		}
+		
+	}
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather App</title>
+	<meta charset="UTF-8"/>
+	<link href="~/Stylesheet.css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Weather</h1>
+<div class="page-container">
+<div class="city-outer  @DetermineAnchorPlacement(Model.Count())">
+	@foreach (CityWeather city in Model)
+	{
+		
+			<div class="city-container @CheckTemp(city.TemperatureFahrenheit)
+			">
+				<div class="left-box">
+					<h3>@city.CityName</h3>
+					@if (Model.Count > 1)
+					{
+						<p class="time-home">@city.DateAndTime.TimeOfDay</p>
+						<a href="/single-city/@city.CityUniqueCode">Details</a>
+					}
+					else
+					{
+						<p>@city.DateAndTime.Month/@city.DateAndTime.Day/@city.DateAndTime.Year</p>
+						<p>@city.DateAndTime.TimeOfDay</p>
+					}
+				</div>
+				<div class="right-box">
+					<h2>@city.TemperatureFahrenheit <span class="degree">&deg; F</span></h2>
+				</div>
+			</div>
+		@if (Model.Count == 1)
+		{
+			<a href="/">Back to Home</a>
+		}
+		
+		
+	}
+	</div>
+	
+	
+</div>
+</body>
+</html>

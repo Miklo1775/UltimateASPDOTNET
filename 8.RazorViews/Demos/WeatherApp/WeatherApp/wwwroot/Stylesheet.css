@@ -9,14 +9,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .city-container{
-    height: 10%;
+    height: 100%;
     width: 20%;
     display: flex;
-    border: 2px solid black;
+    border: 2px solid gray;
     margin: 5px;
+    border-radius: 5px;
 }
 
 .left-box{
@@ -34,4 +36,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.blue {
+    background-color: #6cb7e6;
+}
+
+.green {
+    background-color:  #e0ff8f;
+}
+
+.red {
+    background-color: #faca70;
+}
+
+.time-home{
+    margin-bottom: 10px;
+}
+
+.degree {
+    color:  #a3a3a3;
+}
+
+.city-outer{
+    height: 10%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor-bottom{
+    flex-direction: column;
 }

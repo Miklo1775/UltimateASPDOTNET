@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/Views/Home/AllCities.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BbGxDaXRpZXMuY3NodG1s
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/Views/Shared/City.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/8.RazorViews/Demos/WeatherApp/WeatherApp/Views/Shared/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
