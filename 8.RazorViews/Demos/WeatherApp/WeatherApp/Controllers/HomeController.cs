@@ -42,15 +42,22 @@ public class HomeController : Controller
 	{
 		if (cityCode == null)
 		{
-			return BadRequest("City Code cannot be null.");
+			return View("ErrorPage");
 		}
 
-		List<CityWeather> city = new List<CityWeather>()
+		List<CityWeather?> city = new List<CityWeather?>()
 		{
-			_context.Single(city =>
-				city.CityUniqueCode!.ToLower() == cityCode
-					.ToLower())
+			_context.FirstOrDefault(city => city.CityUniqueCode!.ToLower() == cityCode
+				.ToLower())
 		};
+
+		foreach (CityWeather? weather in city)
+		{
+			if (weather == null)
+			{
+				return View("ErrorPage");
+			}
+		}
 	
 	return View("City" ,city);
 	}
