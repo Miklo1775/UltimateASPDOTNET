@@ -1,0 +1,12 @@
+Layout Views
+
+--What is a Layout View?
+    > A Layout View is a web page (.cshtml) that is responsible for containing 
+    presentation logic template (commonly the html template with header, 
+    sidebar, footer, etc)
+    
+--Order of Views Execution
+    > _ViewImports.cshtml
+    > _ViewStart.cshtml
+    > View.cshtml
+    > LayoutView.cshtml
