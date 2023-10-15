@@ -74,8 +74,10 @@ namespace ViewsDemo.Controllers
         [Route("home/products-all")]
         public IActionResult All()
         {
+	        //IT WILL CHECK FOR THE ALL VIEW IN THE FOLDER AND THEN CHECK THE SHARED FOLDER NEXT
 	        //Views/Products/All.cshtml || /Views/Shared/All.cshtml
-	        return View();
+	        
+	        return View("All");
 		
         }
     }
