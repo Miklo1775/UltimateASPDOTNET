@@ -15,8 +15,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Products/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Products/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/Views/Shared/_Layout.cshtml]
