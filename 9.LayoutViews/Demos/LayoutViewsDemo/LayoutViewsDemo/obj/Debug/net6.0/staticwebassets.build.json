@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "H1xWoemdhK/gbTANvM2yce2hLDqAuGLOs3soWoSZixE=",
+  "Source": "LayoutViewsDemo",
+  "BasePath": "_content/LayoutViewsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LayoutViewsDemo/wwwroot",
+      "Source": "LayoutViewsDemo",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/wwwroot/",
+      "BasePath": "_content/LayoutViewsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/wwwroot/Stylesheet.css",
+      "SourceId": "LayoutViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/LayoutViewsDemo/LayoutViewsDemo/wwwroot/",
+      "BasePath": "_content/LayoutViewsDemo",
+      "RelativePath": "Stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Stylesheet.css"
+    }
+  ]
+}
