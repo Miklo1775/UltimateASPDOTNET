@@ -24,6 +24,9 @@
 		@* @RENDERBODY IS WHERE THE CONTENTS OF THE PAGE WILL BE DISPLAYED IN THE LAYOUT *@
 		@RenderBody()
 	</div>
+	<div class="footer-content">
+		@RenderSection("footer_section",false)
+	</div>
 </div>
 
 </body>

@@ -20,3 +20,22 @@ Layout Views
      send data from view to layout, since the view executes first.
     > The css/js files imported in layout view will be applicable to view also, 
     because the content of view will be merged into the layout view at runtime.
+    
+ --Layout Views - Sections
+    > Section defines the content in the view, to be rendered in a specific 
+    place in the layout view.
+    > Sections can be rendered as optional by using the parameter: false 
+    parameter.
+    > Format:
+        *****
+            @section section_name
+            {
+                // section content here
+            }
+                        ||
+                        \/
+            @RenderSection("section_name")
+        *****
+    > One common use-case for using sections is importing a script file for a 
+   certain view. We don't want to import that script file for all the views, so 
+   we can use sections as a way of importing that file in certain views.
