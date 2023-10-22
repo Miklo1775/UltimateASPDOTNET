@@ -39,3 +39,7 @@ Layout Views
     > One common use-case for using sections is importing a script file for a 
    certain view. We don't want to import that script file for all the views, so 
    we can use sections as a way of importing that file in certain views.
+   
+ --Nested Layout Views
+    > A layout view that has another layout view is called as a 'nested layout 
+    view'.
