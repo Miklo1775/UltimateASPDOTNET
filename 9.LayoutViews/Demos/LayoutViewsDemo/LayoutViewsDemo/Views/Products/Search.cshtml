@@ -1,7 +1,15 @@
 @{
-	//The below will override the global ViewStart
-	Layout = "_ProductsLayout";
 	ViewData["Title"] = "Search Page";
+	
+	//SETTING LAYOUT VIEWS DYNAMICALLY
+	if (ViewBag.ProductID != null)
+	{
+		//THE BELOW LAYOUT WILL OVERRIDE THE GLOBAL _ViewStart LAYOUT
+		Layout = "_ProductsLayout";
+	}
+	
+	
+	
 }
 
 <h1>Search for Products</h1>

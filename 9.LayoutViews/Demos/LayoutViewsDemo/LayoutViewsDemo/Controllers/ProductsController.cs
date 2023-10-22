@@ -12,9 +12,10 @@ public class ProductsController : Controller
 		return View();
 	}
 	
-	[Route("search-products")]
-	public IActionResult Search()
+	[Route("search-products/{ProductID?}")]
+	public IActionResult Search(int? ProductID)
 	{
+		ViewBag.ProductID = ProductID;
 		ViewBag.Title = "Search for Products";
 		return View();
 	}
