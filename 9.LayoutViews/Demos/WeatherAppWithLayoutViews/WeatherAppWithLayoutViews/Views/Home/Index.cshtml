@@ -1,0 +1,47 @@
+@model List<CityWeather>
+
+@{
+	Layout = "_Layout";
+}
+
+@{
+	string CheckTemp(int temp)
+	{
+		if (temp < 44)
+		{
+			return "blue";
+		}
+		else if (temp <= 74)
+		{
+			return "green";
+		}
+		else
+		{
+			return "red";
+		}
+		
+	}
+}
+
+@foreach (CityWeather city in Model)
+{
+		<div class="city-container @CheckTemp(city.TemperatureFahrenheit)
+        			">
+        				<div class="left-box">
+        					<h3>@city.CityName</h3>
+        					@if (Model.Count > 1)
+        					{
+        						<p class="time-home">@city.DateAndTime.TimeOfDay</p>
+        						<a href="/weather/@city.CityUniqueCode">Details</a>
+        					}
+        					else
+        					{
+        						<p>@city.DateAndTime.Month/@city.DateAndTime.Day/@city.DateAndTime.Year</p>
+        						<p>@city.DateAndTime.TimeOfDay</p>
+        					}
+        				</div>
+        				<div class="right-box">
+        					<h2>@city.TemperatureFahrenheit <span class="degree">&deg; F</span></h2>
+        				</div>
+        			</div>
+}

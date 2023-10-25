@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "9uy3+FTReo9DoGLOGaYgYJx+KA2M3eU3oB7gUbFc7hs=",
+  "Source": "WeatherAppWithLayoutViews",
+  "BasePath": "_content/WeatherAppWithLayoutViews",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WeatherAppWithLayoutViews/wwwroot",
+      "Source": "WeatherAppWithLayoutViews",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/WeatherAppWithLayoutViews/WeatherAppWithLayoutViews/wwwroot/",
+      "BasePath": "_content/WeatherAppWithLayoutViews",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/WeatherAppWithLayoutViews/WeatherAppWithLayoutViews/wwwroot/stylesheet.css",
+      "SourceId": "WeatherAppWithLayoutViews",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/9.LayoutViews/Demos/WeatherAppWithLayoutViews/WeatherAppWithLayoutViews/wwwroot/",
+      "BasePath": "_content/WeatherAppWithLayoutViews",
+      "RelativePath": "stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/stylesheet.css"
+    }
+  ]
+}

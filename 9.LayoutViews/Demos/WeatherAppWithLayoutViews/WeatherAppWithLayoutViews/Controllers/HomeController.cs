@@ -31,12 +31,26 @@ public class HomeController : Controller
 	[Route("home")]
 	public IActionResult Index()
 	{
-		return View();
+		
+		return View(_context);
 	}
 
 	[Route("weather/{cityCode}")]
 	public IActionResult SingleCity(string? cityCode)
 	{
-		return View();
+		if (cityCode == null)
+		{
+			return View("ErrorPage");
+		}
+
+		CityWeather? city = _context.FirstOrDefault(city => city.CityUniqueCode!.ToLower() == cityCode.ToLower());
+
+
+		if (city == null)
+		{
+			return View("ErrorPage");
+		}
+		
+		return View(city);
 	}
 }
