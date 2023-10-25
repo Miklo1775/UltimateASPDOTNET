@@ -31,13 +31,14 @@ public class HomeController : Controller
 	[Route("home")]
 	public IActionResult Index()
 	{
-		
+		ViewData["Title"] = "Weather";	
 		return View(_context);
 	}
 
 	[Route("weather/{cityCode}")]
 	public IActionResult SingleCity(string? cityCode)
 	{
+		
 		if (cityCode == null)
 		{
 			return View("ErrorPage");
@@ -50,6 +51,8 @@ public class HomeController : Controller
 		{
 			return View("ErrorPage");
 		}
+
+		ViewData["Title"] = $"{city.CityName} Weather";
 		
 		return View(city);
 	}
