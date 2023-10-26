@@ -1,0 +1,6 @@
+Partial Views
+
+--What is a Partial View?
+    > A Partial View is a razor markup file (.cshtml) that can't be invoked 
+    individually from the controller, but can be invoked from any view within 
+    the same web application.
