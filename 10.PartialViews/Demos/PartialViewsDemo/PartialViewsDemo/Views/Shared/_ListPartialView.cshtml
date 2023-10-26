@@ -1,10 +1,9 @@
 <div class="list-container">
-	<h3>Cities</h3>
+	<h3>@ViewData["ListTitle"]</h3>
 	<ul class="list">
-		<li>London</li>
-		<li>Paris</li>
-		<li>New York</li>
-		<li>Tokyo</li>
-		<li>Rome</li>
+		@foreach (string city in (IEnumerable<string>)ViewData["ListItems"])
+		{
+			<li>@city</li>
+		}
 	</ul>
 </div>

@@ -29,9 +29,30 @@ Partial Views
     > The differences between RenderPartialAsync and the other 2 methods is that
      the other 2 methods return the content to the parent view. 
      RenderPartialAsync returns void because it streams the content to the 
-     browser. 
-     
+     browser.
      > RenderPartialAsync improves the performance in larger scale code.
-     
      > The other 2 methods return IHtml content so its possible to store them in
       a variable.
+      
+--Partial Views with ViewData
+    > When a partial view is invoked, it receives a copy of the parent view's 
+    ViewData object.
+    > Any changes made in the ViewData of the partial view will not affect the 
+    ViewData of the parent view.
+    > Optionally, you can supply a custom ViewData object to the partial view, 
+    if you don't want the partial view to access the entire ViewData of the 
+    parent view.
+    
+    > Format:
+        *****
+            @{
+                await Html.RenderPartialAsync("partial view name", ViewData);
+            }
+        *****
+        
+    > Format:
+        *****
+            <partial name="partial view name" view-data="ViewData" />
+        *****
+        
+        
