@@ -55,4 +55,7 @@ Partial Views
             <partial name="partial view name" view-data="ViewData" />
         *****
         
-        
+--Strongly Typed Partial Views
+    > A strongly-typed partial view is a partial view that is bound to a 
+    specified model class which gives it all the benefits of a strongly type 
+    view.
