@@ -4,3 +4,34 @@ Partial Views
     > A Partial View is a razor markup file (.cshtml) that can't be invoked 
     individually from the controller, but can be invoked from any view within 
     the same web application.
+    
+--The Different Ways to Invoke Partial Views
+    > Format:
+        *****
+            <partial name="partial view name"></partial>
+        *****
+            >> Returns the content to the parent view.
+            
+    > Format:
+        *****
+            await Html.PartialAsync("partial view name")
+        *****
+            >> Returns the content to the parent view.
+            
+    > Format:
+        *****
+            @{
+                await Html.RenderPartialAsync("partial view name");
+            }
+        *****
+            >> Streams the content to the browser.
+            
+    > The differences between RenderPartialAsync and the other 2 methods is that
+     the other 2 methods return the content to the parent view. 
+     RenderPartialAsync returns void because it streams the content to the 
+     browser. 
+     
+     > RenderPartialAsync improves the performance in larger scale code.
+     
+     > The other 2 methods return IHtml content so its possible to store them in
+      a variable.

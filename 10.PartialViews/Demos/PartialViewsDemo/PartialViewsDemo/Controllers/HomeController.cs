@@ -4,12 +4,13 @@ namespace PartialViewsDemo.Controllers;
 
 public class HomeController : Controller
 {
-	// GET
+	[Route("/")]
 	public IActionResult Index()
 	{
 		return View();
 	}
 
+	[Route("about")]
 	public IActionResult About()
 	{
 		return View();

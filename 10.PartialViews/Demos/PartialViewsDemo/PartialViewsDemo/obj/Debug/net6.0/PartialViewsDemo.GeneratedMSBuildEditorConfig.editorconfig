@@ -14,3 +14,27 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/Views/Shared/_ListPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MaXN0UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

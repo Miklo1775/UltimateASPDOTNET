@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "hhTo8jVWOtergR1+edacfhBXlXwB3d0TRjJlWDFHgcg=",
+  "Source": "PartialViewsDemo",
+  "BasePath": "_content/PartialViewsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PartialViewsDemo/wwwroot",
+      "Source": "PartialViewsDemo",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/wwwroot/",
+      "BasePath": "_content/PartialViewsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/wwwroot/stylesheet.css",
+      "SourceId": "PartialViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/PartialViewsDemo/PartialViewsDemo/wwwroot/",
+      "BasePath": "_content/PartialViewsDemo",
+      "RelativePath": "stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/stylesheet.css"
+    }
+  ]
+}
