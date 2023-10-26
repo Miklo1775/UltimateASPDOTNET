@@ -59,3 +59,9 @@ Partial Views
     > A strongly-typed partial view is a partial view that is bound to a 
     specified model class which gives it all the benefits of a strongly type 
     view.
+    
+--PartialViewResult
+    > Can represent the content of the partial.
+    > Generally useful to fetch partial view's content into the browser by 
+    making an asynchronous request (XMLHttpRequest / fetch request) from the 
+    browser.
