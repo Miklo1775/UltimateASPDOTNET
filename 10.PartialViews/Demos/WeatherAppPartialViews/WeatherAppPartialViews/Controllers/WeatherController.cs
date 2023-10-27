@@ -31,7 +31,7 @@ public class WeatherController : Controller
 	[Route("weather")]
 	public IActionResult Index()
 	{
-		
+		ViewData["Title"] = "Weather";
 		return View(_context);
 	}
 
@@ -40,6 +40,7 @@ public class WeatherController : Controller
 	{
 		if (cityUniqueCode == null)
 		{
+			ViewData["Title"] = "Error";
 			return View("ErrorPage");
 		}
 
@@ -48,8 +49,11 @@ public class WeatherController : Controller
 
 		if (city == null)
 		{
+			ViewData["Title"] = "Error";
 			return View("ErrorPage");
 		}
+
+		ViewData["Title"] = $"{city.CityName} Weather";
 		return View(city);
 	}
 }
