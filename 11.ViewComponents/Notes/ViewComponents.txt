@@ -1,0 +1,6 @@
+View Components
+
+--What is a View Component?
+    > A View Component is a combination of a class (derived from Microsoft
+    .AspNetCore.ViewComponent) that supplies data, and a partial view to render 
+    that data.
