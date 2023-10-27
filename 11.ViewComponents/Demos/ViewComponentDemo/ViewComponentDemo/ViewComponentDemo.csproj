@@ -10,4 +10,8 @@
       <Folder Include="Models\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Components\Grid\Default.cshtml" />
+    </ItemGroup>
+
 </Project>

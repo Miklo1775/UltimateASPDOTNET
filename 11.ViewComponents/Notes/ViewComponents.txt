@@ -4,3 +4,20 @@ View Components
     > A View Component is a combination of a class (derived from Microsoft
     .AspNetCore.ViewComponent) that supplies data, and a partial view to render 
     that data.
+    > Renders a chunk rather than a whole response.
+    > Includes the same separation-of-concerns and testability found with a 
+    controller and view.
+    > Should be either suffixed with the word "ViewComponent" or should have 
+    [ViewComponent] attribute.
+    > Optionally, can inherit from System.AspNetCore.Mvc.ViewComponent
+    
+--Invoking View Components
+    > Format:
+        *****
+            @await Component.InvokeAsync("view component name");
+        *****
+        
+    > Format:
+        *****
+            <vc:component-name />
+        *****

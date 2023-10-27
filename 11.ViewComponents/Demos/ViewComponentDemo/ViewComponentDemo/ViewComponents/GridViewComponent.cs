@@ -5,8 +5,8 @@ namespace ViewComponentDemo.ViewComponents;
 // [ViewComponent]
 public class GridViewComponent : ViewComponent
 {
-	Task<IViewComponentResult> InvokeAsync()
+	public async Task<IViewComponentResult> InvokeAsync()
 	{
-		return View(); //INVOKES A PARTIAL VIEW FROM Views/Shared/Components/Grid/Default.cshtml
+		return View("Sample"); //INVOKES A PARTIAL VIEW FROM Views/Shared/Components/Grid/Default.cshtml
 	}
 }
