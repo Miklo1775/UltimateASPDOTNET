@@ -14,3 +14,27 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/Shared/_CityWeatherPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DaXR5V2VhdGhlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/Weather/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VhdGhlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/Weather/SingleCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VhdGhlci9TaW5nbGVDaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

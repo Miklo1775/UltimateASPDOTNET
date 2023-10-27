@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xOGtWM5MK9qSgtL8Jo+ytw77Yz981yE18Z23JcdzoeY=",
+  "Source": "WeatherAppPartialViews",
+  "BasePath": "_content/WeatherAppPartialViews",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WeatherAppPartialViews/wwwroot",
+      "Source": "WeatherAppPartialViews",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/wwwroot/",
+      "BasePath": "_content/WeatherAppPartialViews",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/wwwroot/stylesheet.css",
+      "SourceId": "WeatherAppPartialViews",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/wwwroot/",
+      "BasePath": "_content/WeatherAppPartialViews",
+      "RelativePath": "stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/stylesheet.css"
+    }
+  ]
+}

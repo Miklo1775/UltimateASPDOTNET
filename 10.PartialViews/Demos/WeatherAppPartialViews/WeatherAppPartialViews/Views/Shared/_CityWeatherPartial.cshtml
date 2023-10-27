@@ -1,0 +1,34 @@
+@model CityWeather
+
+@{
+	string CheckTemp(int temp)
+	{
+		if (temp < 44)
+		{
+			return "blue";
+		}
+		else if (temp <= 74)
+		{
+			return "green";
+		}
+		else
+		{
+			return "red";
+		}
+	}
+
+}
+
+	<div class="city-container @CheckTemp(Model.TemperatureFahrenheit)
+        			">
+		<div class="left-box">
+			<h3>@Model.CityName</h3>
+			<p class="time-home">@Model.DateAndTime.TimeOfDay</p>
+			<a href="/weather/single-city/@Model.CityUniqueCode">Details</a>
+		
+		</div>
+		<div class="right-box">
+			<h2>@Model.TemperatureFahrenheit <span class="degree">&deg; 
+				F</span></h2>
+		</div>
+	</div>
