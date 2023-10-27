@@ -1,0 +1,16 @@
+@model CityWeather
+
+<div class="page-container direct-col">
+<div class="city-container">
+	<div class="left-box">
+		<h3>@Model.CityName</h3>
+        		
+		<p>@Model.DateAndTime.Month/@Model.DateAndTime.Day/@Model.DateAndTime.Year</p>
+		<p>@Model.DateAndTime.TimeOfDay</p>
+	</div>
+	<div class="right-box">
+		<h2>@Model.TemperatureFahrenheit <span class="degree">&deg; 
+			F</span></h2>
+	</div>
+</div>
+</div>

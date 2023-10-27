@@ -35,9 +35,21 @@ public class WeatherController : Controller
 		return View(_context);
 	}
 
-	[Route("weather/single-city/{cityUniqueCode}")]
+	[Route("single-city/{cityUniqueCode}")]
 	public IActionResult SingleCity(string? cityUniqueCode)
 	{
-		return View();
+		if (cityUniqueCode == null)
+		{
+			return View("ErrorPage");
+		}
+
+		CityWeather? city = _context.FirstOrDefault(o => o.CityUniqueCode!
+			.ToLower() == cityUniqueCode.ToLower());
+
+		if (city == null)
+		{
+			return View("ErrorPage");
+		}
+		return View(city);
 	}
 }

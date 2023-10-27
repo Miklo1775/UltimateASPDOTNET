@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/Shared/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/10.PartialViews/Demos/WeatherAppPartialViews/WeatherAppPartialViews/Views/Shared/_CityWeatherPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DaXR5V2VhdGhlclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

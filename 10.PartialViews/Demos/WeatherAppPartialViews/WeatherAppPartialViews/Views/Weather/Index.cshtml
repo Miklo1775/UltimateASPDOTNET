@@ -1,6 +1,8 @@
 @model List<CityWeather>
 
+<div class="page-container">
 @foreach (CityWeather city in Model)
 {
 	<partial name="_CityWeatherPartial" model="city"/>
 }
+</div>
