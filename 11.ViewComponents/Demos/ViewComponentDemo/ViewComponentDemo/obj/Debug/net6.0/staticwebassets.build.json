@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "qvv0qWjLJrVbF2mdFuT6pIi6ly5XMUhOdiulcVBBPTQ=",
+  "Source": "ViewComponentDemo",
+  "BasePath": "_content/ViewComponentDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ViewComponentDemo/wwwroot",
+      "Source": "ViewComponentDemo",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/11.ViewComponents/Demos/ViewComponentDemo/ViewComponentDemo/wwwroot/",
+      "BasePath": "_content/ViewComponentDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/11.ViewComponents/Demos/ViewComponentDemo/ViewComponentDemo/wwwroot/stylesheet.css",
+      "SourceId": "ViewComponentDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/11.ViewComponents/Demos/ViewComponentDemo/ViewComponentDemo/wwwroot/",
+      "BasePath": "_content/ViewComponentDemo",
+      "RelativePath": "stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/stylesheet.css"
+    }
+  ]
+}
