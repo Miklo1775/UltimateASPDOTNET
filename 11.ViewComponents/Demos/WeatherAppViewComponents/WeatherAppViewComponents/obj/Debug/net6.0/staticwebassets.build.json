@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "KIjLpFuyzdsR062SYKuEIwCZln6ncHyoGJF/VUKqimk=",
+  "Source": "WeatherAppViewComponents",
+  "BasePath": "_content/WeatherAppViewComponents",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WeatherAppViewComponents/wwwroot",
+      "Source": "WeatherAppViewComponents",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/11.ViewComponents/Demos/WeatherAppViewComponents/WeatherAppViewComponents/wwwroot/",
+      "BasePath": "_content/WeatherAppViewComponents",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/11.ViewComponents/Demos/WeatherAppViewComponents/WeatherAppViewComponents/wwwroot/stylesheet.css",
+      "SourceId": "WeatherAppViewComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/11.ViewComponents/Demos/WeatherAppViewComponents/WeatherAppViewComponents/wwwroot/",
+      "BasePath": "_content/WeatherAppViewComponents",
+      "RelativePath": "stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/stylesheet.css"
+    }
+  ]
+}

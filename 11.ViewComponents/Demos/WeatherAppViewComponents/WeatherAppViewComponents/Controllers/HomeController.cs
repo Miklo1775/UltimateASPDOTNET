@@ -14,7 +14,7 @@ public class HomeController : Controller
 		},
 		new CityWeather()
 		{
-			CityUniqueCode = "NYC", CityName = "London", DateAndTime = DateTime.Parse("2030-01-01 3:00"),  TemperatureFahrenheit = 60
+			CityUniqueCode = "NYC", CityName = "New York City", DateAndTime = DateTime.Parse("2030-01-01 3:00"),  TemperatureFahrenheit = 60
 		},
 		new CityWeather()
 		{
@@ -25,7 +25,7 @@ public class HomeController : Controller
 	[Route("/")]
 	public IActionResult Index()
 	{
-		return View();
+		return View(_context);
 	}
 
 	[Route("single-city/{cityUniqueCode}")]
@@ -37,25 +37,19 @@ public class HomeController : Controller
 		}
 
 		CityWeather? city = _context.FirstOrDefault(c =>
-			c.CityUniqueCode!.ToLower() == cityUniqueCode.ToLower());
+			c.CityUniqueCode!.ToLower()
+			== cityUniqueCode.ToLower());
 
 		if (city == null)
 		{
 			return View("ErrorPage");
 		}
-
-		ViewBag.CityCode = cityUniqueCode;
-		return View("SingleCity");
-	}
-
-	[Route("get-city")]
-	public IActionResult GetCity(string? cityUniqueCode)
-	{
-		if (cityUniqueCode == null)
+		return ViewComponent("CityWeather", new
 		{
-			return View("ErrorPage");
-		}
-		return ViewComponent("CityWeather");
+			city = city
+		});
 	}
+
+	
 	
 }

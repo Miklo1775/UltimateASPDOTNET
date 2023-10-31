@@ -1,18 +1,37 @@
-@model TModel
+@model List<CityWeather>
 
 @{
-	Layout = null;
+	string CheckTemp(int temp)
+	{
+		if (temp < 44)
+		{
+			return "blue";
+		}
+		else if (temp <= 74)
+		{
+			return "green";
+		}
+		else
+		{
+			return "red";
+		}
+	}
+
 }
+@foreach (CityWeather city in Model)
+{
+	<div class="city-container @CheckTemp(city.TemperatureFahrenheit)
+        			">
+		<div class="left-box">
+			<h3>@city.CityName</h3>
+			<p class="time-home">@city.DateAndTime.TimeOfDay</p>
+			<a href="/single-city/@city.CityUniqueCode">Details</a>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-	<title>title</title>
-</head>
-<body>
-<div>
-	  
-</div>
-</body>
-</html>
+		</div>
+		<div class="right-box">
+			<h2>@city.TemperatureFahrenheit
+				<span class="degree">&deg;
+					F</span></h2>
+		</div>
+	</div>
+}

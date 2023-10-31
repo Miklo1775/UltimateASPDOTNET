@@ -7,6 +7,6 @@ public class CityWeatherViewComponent : ViewComponent
 {
 	public async Task<IViewComponentResult> InvokeAsync(CityWeather city)
 	{
-		return View("CityWeather");
+		return View("CityWeather", city);
 	}
 }
