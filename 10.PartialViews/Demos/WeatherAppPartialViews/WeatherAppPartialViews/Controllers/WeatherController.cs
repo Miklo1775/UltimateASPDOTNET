@@ -28,7 +28,6 @@ public class WeatherController : Controller
 	};
 	
 	[Route("/")]
-	[Route("weather")]
 	public IActionResult Index()
 	{
 		ViewData["Title"] = "Weather";
