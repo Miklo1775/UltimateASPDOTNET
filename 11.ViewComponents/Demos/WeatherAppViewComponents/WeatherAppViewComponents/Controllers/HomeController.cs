@@ -21,8 +21,41 @@ public class HomeController : Controller
 			CityUniqueCode = "PAR", CityName = "Paris", DateAndTime = DateTime.Parse("2030-01-01 9:00"),  TemperatureFahrenheit = 82
 		}
 	};
+	
+	[Route("/")]
 	public IActionResult Index()
 	{
 		return View();
 	}
+
+	[Route("single-city/{cityUniqueCode}")]
+	public IActionResult SingleCity(string? cityUniqueCode)
+	{
+		if (cityUniqueCode == null)
+		{
+			return View("ErrorPage");
+		}
+
+		CityWeather? city = _context.FirstOrDefault(c =>
+			c.CityUniqueCode!.ToLower() == cityUniqueCode.ToLower());
+
+		if (city == null)
+		{
+			return View("ErrorPage");
+		}
+
+		ViewBag.CityCode = cityUniqueCode;
+		return View("SingleCity");
+	}
+
+	[Route("get-city")]
+	public IActionResult GetCity(string? cityUniqueCode)
+	{
+		if (cityUniqueCode == null)
+		{
+			return View("ErrorPage");
+		}
+		return ViewComponent("CityWeather");
+	}
+	
 }
