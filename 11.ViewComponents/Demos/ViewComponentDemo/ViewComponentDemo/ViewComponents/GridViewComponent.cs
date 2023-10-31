@@ -20,7 +20,9 @@ public class GridViewComponent : ViewComponent
 				new Person() { PersonName = "Squishy", JobTitle = "Snow cat" }
 			}
 		};
-		ViewData["Grid"] = model;
-		return View("Sample"); //INVOKES A PARTIAL VIEW FROM Views/Shared/Components/Grid/Default.cshtml
+		// ViewData["Grid"] = model;
+		// return View("Sample"); //INVOKES A PARTIAL VIEW FROM Views/Shared/Components/Grid/Default.cshtml
+		// BELOW WE ARE PASSING THE PERSONS TO THE VIEW AS AN OBJECT
+		return View("Sample", model);
 	}
 }

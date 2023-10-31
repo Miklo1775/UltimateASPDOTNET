@@ -25,3 +25,7 @@ View Components
 --View Components with ViewData
     > The ViewComponent class can share ViewData object to the ViewComponent 
     view.
+    
+--Strongly Typed ViewComponent
+    > A Strongly Typed ViewComponents view is tightly bound to a specified model
+     class so it gets all the benefits of a strongly typed view.
