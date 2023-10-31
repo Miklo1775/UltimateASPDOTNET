@@ -29,3 +29,22 @@ View Components
 --Strongly Typed ViewComponent
     > A Strongly Typed ViewComponents view is tightly bound to a specified model
      class so it gets all the benefits of a strongly typed view.
+     
+--ViewComponents with Parameters
+    > You can supply one or more parameters to the view component class.
+    > The parameters are received by InvokeAsync method of the view component 
+    class.
+    > All the parameters oof view component are mandatory.
+    > Parent View format: 
+        *****
+            @await Component.InvokeAsync("view component name", new {
+                param1 = value1, param2 = value2, ...
+            });
+        *****
+    > View Component Class Format:
+        *****
+            InvokeAsync(datatype param1, datatype param2, ...)
+            {
+                // code here
+            }
+        *****
