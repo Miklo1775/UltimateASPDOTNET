@@ -4,32 +4,38 @@
 
 <h1>Home</h1>
 
-@{
-	PersonGridModel personsModel = new PersonGridModel()
-	{
-		GridTitle = "Hard Worker Cats",
-		Persons = new List<Person>()
-		{
-			new Person()
-			{
-				JobTitle = "Destroyer of furniture",
-				PersonName = "Chichi"
-			},
-			new Person()
-			{
-				JobTitle = "Food inventory specialist",
-				PersonName = "Squishy"
-			},
-			new Person()
-			{
-				JobTitle = "Cat leader",
-				PersonName = "Sylvestre"
-			}
-		}
-	};
-}
+@* @{ *@
+@* 	PersonGridModel personsModel = new PersonGridModel() *@
+@* 	{ *@
+@* 		GridTitle = "Hard Worker Cats", *@
+@* 		Persons = new List<Person>() *@
+@* 		{ *@
+@* 			new Person() *@
+@* 			{ *@
+@* 				JobTitle = "Destroyer of furniture", *@
+@* 				PersonName = "Chichi" *@
+@* 			}, *@
+@* 			new Person() *@
+@* 			{ *@
+@* 				JobTitle = "Food inventory specialist", *@
+@* 				PersonName = "Squishy" *@
+@* 			}, *@
+@* 			new Person() *@
+@* 			{ *@
+@* 				JobTitle = "Cat leader", *@
+@* 				PersonName = "Sylvestre" *@
+@* 			} *@
+@* 		} *@
+@* 	}; *@
+@* } *@
+@* *@
+@* @await Component.InvokeAsync("Grid", new *@
+@*        { *@
+@* 	       grid = personsModel *@
+@*        }) *@
 
-@await Component.InvokeAsync("Grid", new
-       {
-	       grid = personsModel
-       })
+<button class="button button-blue-back" id="load-cats-button">Load Cats</button>
+<div id="list"></div>
+<script src="friends.js">
+
+</script>

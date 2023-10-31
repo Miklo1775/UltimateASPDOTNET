@@ -48,3 +48,9 @@ View Components
                 // code here
             }
         *****
+        
+--ViewComponentResult
+    > ViewComponent can represent the content of a view component.
+    > Generally useful to fetch view component's content into the browser by 
+    making an asynchronous request (XMLHttpRequest/fetch request) from the 
+    browser.
