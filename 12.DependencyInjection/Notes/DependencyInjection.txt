@@ -1,0 +1,12 @@
+Dependency Injection
+
+--Services
+    > 'Service' is a class that contains business logic such as business 
+    calculations and business validations that are specific to the domain of the
+    client's business.
+    > Service is an abstraction layer (middle layer) between presentation layer 
+    (or application layer) and data layer.
+    > It makes the business logic seperated from the presentation amd data layer
+    .
+    > It makes the business logic to be unit testable easy.
+    > Will be invoked by controller.
