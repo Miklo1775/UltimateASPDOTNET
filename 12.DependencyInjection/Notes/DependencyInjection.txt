@@ -10,3 +10,64 @@ Dependency Injection
     .
     > It makes the business logic to be unit testable easy.
     > Will be invoked by controller.
+    
+--Dependency Inversion Principle (DIP)
+    > Dependency Problem 
+         >> Higher level modules depend on lower level modules -- tightly 
+         coupled.
+         >> The developer of the higher-level module should wait until the 
+         completion of development of the lower-level module.
+         >> Any changes made in the lower-level module affects changes in the 
+         higher level module.
+         >> Requires much code changes to interchange an alternative lower-level
+          module.
+         >> Difficult to test a single module without effecting / testing the 
+         other module.
+    
+    > Dependency Inversion Principle (DIP) is a design principle (guideline) 
+    which is a solution for the dependency problem.
+        >> The higher-level modules (clients) should not depend on the low-level
+         modules (dependencies). Both should depend on abstractions (interfaces 
+         or abstract class.)
+        >> Abstractions should not depend on details (both client or dependency)
+        . Details( both client and dependency) should depend on abstractions.
+        >> So for our demo, the controller shouldnt depend on the Service class 
+        nor should the Service class depend on the controller. They both should 
+        depend on abstractions.
+        
+    > Interface (abstraction) Format:
+        *****
+            public interface IService
+            {
+                void ServiceMethod();
+            }
+        *****
+        
+    > Service (dependency) Format:
+        *****
+            public class MyService : IService
+            {
+                public void ServiceMethod()
+                {
+                    ...
+                }
+            }
+        *****
+        
+    > Controller (client) Format:
+        *****
+            public class MyController : Controller
+            {
+                private readonly IService _service;
+                
+                public MyController()
+                {
+                    _service = ...; //how to create object?
+                }
+                
+                public IActionResult ActionMethod()
+                {
+                    _service.ServiceMethod();
+                }
+            }
+        *****
