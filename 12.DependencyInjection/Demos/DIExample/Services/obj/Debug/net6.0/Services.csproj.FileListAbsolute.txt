@@ -1,0 +1,12 @@
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/bin/Debug/net6.0/Services.deps.json
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/bin/Debug/net6.0/Services.dll
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/bin/Debug/net6.0/Services.pdb
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.csproj.AssemblyReference.cache
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.AssemblyInfoInputs.cache
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.AssemblyInfo.cs
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.csproj.CoreCompileInputs.cache
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.dll
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/refint/Services.dll
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/Services.pdb
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/Services/obj/Debug/net6.0/ref/Services.dll

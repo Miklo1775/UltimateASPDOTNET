@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "HoXEdPOgab2/ZoxIsYNYWEf0lNODMAefKQCykQiINsU=",
+  "Source": "DIExample",
+  "BasePath": "_content/DIExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DIExample/wwwroot",
+      "Source": "DIExample",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/wwwroot/",
+      "BasePath": "_content/DIExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/wwwroot/stylesheet.css",
+      "SourceId": "DIExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/wwwroot/",
+      "BasePath": "_content/DIExample",
+      "RelativePath": "stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/stylesheet.css"
+    }
+  ]
+}
