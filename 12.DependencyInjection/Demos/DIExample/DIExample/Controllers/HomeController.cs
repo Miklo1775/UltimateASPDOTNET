@@ -6,13 +6,14 @@ namespace DIExample.Controllers;
 
 public class HomeController : Controller
 {
-	private readonly CitiesService _citiesService;
+	private readonly ICitiesService _citiesService;
 
-	public HomeController()
+	public HomeController(ICitiesService citiesService)
 	{
 		//CREATING OBJECT OF CitiesService
 		//HOWEVER, THIS IS VERY BAD PRACTICE BECAUSE NOW THE CONTROLLER IS DEPENDENT ON THE SERVICE
-		_citiesService = new CitiesService();
+		// _citiesService = new CitiesService();
+		_citiesService = citiesService;
 	}
 	
 	[Route("/")]

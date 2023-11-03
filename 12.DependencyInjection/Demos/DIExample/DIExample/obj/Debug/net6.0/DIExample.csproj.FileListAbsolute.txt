@@ -25,3 +25,5 @@
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/obj/Debug/net6.0/DIExample.pdb
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/obj/Debug/net6.0/DIExample.genruntimeconfig.cache
 /Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/obj/Debug/net6.0/ref/DIExample.dll
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/bin/Debug/net6.0/ServiceContracts.dll
+/Users/victorflores/Desktop/TechProjects/UltimateASPDOTNET/12.DependencyInjection/Demos/DIExample/DIExample/bin/Debug/net6.0/ServiceContracts.pdb

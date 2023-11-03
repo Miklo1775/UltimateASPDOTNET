@@ -90,8 +90,32 @@ Dependency Injection
                 builder.Services.Add(
                     new ServiceDescriptor(
                         typeof(Interface),
-                        typeof(Service)
+                        typeof(Service),
                         ServiceLifetime.LifeTime //Transient, Scoped, Singleton
                     )
                 );
             *****
+
+--Dependency Injection (DI)
+    > Dependency Injection (DI) is a design pattern which is a technique for 
+    achieving "Inversion of Control" between clients and their dependencies.
+    > It allows you to inject (supply) a concrete implementation object of a 
+    low-level component into a high-level component.
+    > The client class receives the dependency object as a parameter either in 
+    the constructor or in a method.
+    > Constructor Injection Format:
+        *****
+            public class MyController : Controller
+            {
+                private readonly IService _service;
+                public MyController(IService service)
+                {
+                    _service = service; //object from IoC container
+                }
+                
+                public IActionResult ActionMethod()
+                {
+                    _service.ServiceMethod();
+                }
+            }
+        *****
