@@ -71,3 +71,27 @@ Dependency Injection
                 }
             }
         *****
+        
+--Inversion of Control (IoC)
+    > Inversion of Control is a design pattern (reusable solution for a common 
+    problem), which suggests "IoC container" for implementation of Dependency 
+    Inversion Principle (DIP).
+    > It inverses the control by shifting the control to IoC container.
+    > "Dont call us, we will call you" pattern.
+    > It can be implemented by other design patterns such as events, service 
+    locator, dependency injection, etc.
+    > At runtime, the controller tells the IoC container "Give me an object 
+    that implements the Interface" and the IoC container supplies the controller
+    with an object of Service class.
+    > All dependencies should be added into the IServiceCollection (acts as IoC 
+    container).
+        >>Format:
+            *****
+                builder.Services.Add(
+                    new ServiceDescriptor(
+                        typeof(Interface),
+                        typeof(Service)
+                        ServiceLifetime.LifeTime //Transient, Scoped, Singleton
+                    )
+                );
+            *****
