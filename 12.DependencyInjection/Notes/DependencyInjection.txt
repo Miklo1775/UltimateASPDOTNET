@@ -119,3 +119,30 @@ Dependency Injection
                 }
             }
         *****
+        
+    > Method Injection Format:
+        *****
+            public IActionResult ActionMethodName([FromServices]IService 
+            service)
+            {
+                service.ServiceMethod();
+            }
+        *****
+        
+--Service Lifetime in DI
+    > A service lifetime indicates when a new object of the service has to be 
+    created by the IoC/DI container.
+        >> Transient:
+            *Transient lifetime service objects are created each time when they 
+            are injected. Service instances are disposed at the end of the scope
+             (usually, a browser request).
+        >> Scoped:
+            *Scoped lifetime service objects are created once per scope 
+            (usually, a browser request). Service instances are disposed of at 
+            the end of the scope (usually, a browser request).
+        >> Singleton:
+            *Singleton lifetime service objects are created for the first time 
+            when they are requested which means essentially the duration of the 
+            application running. Service instances are disposed at application shutdown. 
+     
+           
